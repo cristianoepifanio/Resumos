@@ -35,6 +35,33 @@
     <p>O aplicativo utilizado para as modificações de tamanhos das imagens foi o GIMP na qual pode ser o download nesse site: <a href="https://www.gimp.org/downloads/thanks.html" target="_blank" rel="external">https://www.gimp.org/downloads/thanks.html</a>. Nele, vai-se na opção: "Imagens &rarr; rendimencionar imagens &rarr; largura (e se o símbolo de elo de corrente estiver fechado, basta digitar o tamanho da largura e pressionar a tecla TAB e então o programa redimensiona também a altura automaticamente) e rendimensionar a imagem desejada. </p>
     <p>Imagens com entre 200 e 1500 px de largura e com resolução de 50 a 72 px já está muito bom para o site, mas geralmente se encontram neles, imagens com 600-650 px. Para salvar a imagem redimensionada, vai-se na opção Arquivos &rarr; exportar como (Ctrl + Shift + E, caso não queira sobrescrever a imagem) &rarr; Com qualidade entre 70 a 100 %. Todo esse trabalho para reduzir alguns <abbr title="Kilo Bytes">KBs</abbr> faz grandes diferenças quando temos milhares de acessos simultâneos.</p>
     <h2>Tag img na HTML5</h2>
-    <p>A tag para colocar uma foto é: <strong>&lt;img src="foto" alt="Texto alternativo"&gt;</strong></p>
+    <p>A tag para colocar uma foto é: <strong>&lt;<abbr title="Imagens">img</abbr> <abbr title="source">src</abbr>="foto" <abbr title="alternative">alt</abbr>="Texto alternativo"&gt;</strong>. Para escrever a tag no visual studio code, basta digitar img e dar ENTER, e para selecionar uma foto que esteja na mesma pasta que o arquivo index.html basta colocar o cursor do teclado entra as aspas do parâmetro src e pressionar Ctrl+espaço e selecionar a foto.</p>
+    <p>Os textos alternativos, mesmo não parecendo muito útil eles ajudam muito na indexação do nosso site em mecanismos de busca, ajudam na acessibilidades aos usuário deficiêntes, como os deficiêntes visuais por exemplo e auxiliam o Google  a identificaro que tem dentro do nosso site e exibilas nos resultados de busca do Google Imagens. </p>
+    <h2>Favicons</h2>
+    <p>Favicons são aquelas pequenas imagens, ícones que aparecem ao lados dos nossos títulos na aba de navegação, seu formato é .ico e podem serem baixados ou feitos nos seguintes sites: <br>
+    <ul type="disc">
+        <li><a href="https://iconarchive.com/">IconArchive</a> para baixar alguns ícones ja prontos.</li>
+        <li><a href="https://www.favicon.cc/">favicon.cc</a> para desenhar seu próprio favicon.</li>
+        <li><a href="https://favicon.io/">favicon.io</a> para criar um ícone personalizado baseado em um imagem.</li>
+    </ul></p>
+    <p>Para colocar um favicon em nosso site, colocar a tag &lt;link:favico&gt; acima do &lt;title&gt; como no exemplo abaixo: <br>
+        <pre>
+            1&lt;!DOCTYPE html&gt;
+            2&lt;html lang="pt-br"&gt;
+            3&lt;head&gt;
+            4    &lt;meta charset="UTF-8"&gt;
+            5    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+            6    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            7    &lt;link rel="shortcut icon" href="favicon.ico" type="imagen/x-icon"&gt;
+            8    &lt;title&gt;Capítulo 6 - imagens&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </p>
+    <p>Os Favicons podem serem feitos nos formatos .ico, .png e .svg que é vetorizado e seria a melhor opção, mas como nem todo navegador é compatível com esse formato, é aconselhável que se utilize o formato .ico. </p>
+    <hr>
+     <p><a href="../../index.html">Página inicial</a></p>
 </body>
 </html>
