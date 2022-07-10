@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="resumos.ico" type="image/x-icon">
     <title>Aula 9 - capítulo 3, aula 1</title>
 </head>
 <body>
     <h1>A diferença entre HTML, CSS e JavaScript</h1>
     <hr>
-    <h2>Este resumo é fruto de um estudo da <a href="https://www.youtube.com/watch?v=B4FU3NFRTDw&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=9" target="_blank" rel="external">aula 9</a> do primeiro módulo do curso de HTML 5 e CSS 3 feito através do canal no youtube do Gustavo guanabara.</h2>
+    <h2>Este resumo é fruto de um estudo da <a href="https://www.youtube.com/watch?v=B4FU3NFRTDw&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=9" target="_blank" rel="external">aula 9</a> do primeiro módulo do curso de HTML 5 e CSS 3 feito através do canal no youtube do Gustavo Guanabara.</h2>
     <h3>A (linguagem) HTML e as (folhas de estilo em cascata) CSS e a linguagem de programação JavaScript.</h3>
     <p>É errado dizer: "Eu programo em <abbr title="
-        hyperText Markup Languange)">HTML</abbr> e <abbr title="Cascading  Style sheets">CSS</abbr>" porque não são linguagens de programação, o correto é dizer: "Eu desenvolvo (crio) em HTML e CSS". Para que seja uma linguagem de programação, precisa-se qua a mesma possua estruturas mais complexas e especializadas como: Uso de variáveis simples e compostas, condições, laços e também possua objetos, e nada disso é presente em HTML (porque é fondamentada em marcas e etiquetas) e nem em CSS (porque funciona com seletores, propriedades e valores), mas em JavaScript sim.</p>
+        hyperText Markup Languange)">HTML</abbr> e <abbr title="Cascading  Style sheets">CSS</abbr>" porque não são linguagens de programação, o correto é dizer: "Eu desenvolvo (crio) em HTML e CSS". Para que seja uma linguagem de programação, precisa-se que a mesma possua estruturas mais complexas e especializadas como: Uso de variáveis simples e compostas, condições, laços e também possua objetos, e nada disso é presente em HTML (porque é fondamentada em marcas e etiquetas) e nem em CSS (porque funciona com seletores, propriedades e valores), mas em JavaScript sim.</p>
     <p>Quanto ao uso de cada linguagem, suas principais diferenças são o fato que HTML foca mais no conteúdo da página, CSS o estilo visual da mesma, enquanto que JavaScript faz a parte interativa do site.</p>
         <h3>Conteúdo em HTML:</h3>
         <p>
@@ -21,7 +22,11 @@
         &lt;img src="foto.png" alt="exemplo de foto"&gt; (não possui fechamento de tag porque não possui conteúdo)
     </p>
     <h3>Conteúdo em CSS:</h3>
-    <p>h1 (seletor){<br> font-family:Arial; (declaração, onde font-family é a propriedade e Arial o valor)<br>font-size:20 pt (pt de pontos ou pixels);<br>color:blue;<br>} <br> Obs.: ao final de cada declaração se finaliza com ";".           
+    <p><pre>h1 { <strong>(seletor)</strong>
+                font-family:Arial; <strong>(declaração, onde font-family é a propriedade e Arial o valor)</strong>
+                font-size:20 pt; <strong>(pt de pontos ou pixels)</strong>
+                color:blue;
+                } </pre><br> Obs.: Ao final de cada declaração se finaliza com ";".           
     </p>
     <h3>Estrutura básica do documento HTML:</h3>
     <p>
@@ -32,7 +37,7 @@
            4        &lt;meta charset="UTF-8"&gt; <strong>(Adiciona suporte a acentuações)</strong><br>
            5        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt; <br>
            6        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<strong>(indica que o conteúdo aparecerá em todo espaço disponível na tela no padrão 1:1)</strong><br>
-           7 &lt;title&lt;Aula 9 - capítulo 3, aula 1&lt;/title&gt; <strong>(configura o título da página ao lado do favicon na aba de navegação)</strong><br>
+           7 &lt;title&gt;Aula 9 - capítulo 3, aula 1&lt;/title&gt; <strong>(configura o título da página ao lado do favicon na aba de navegação)</strong><br>
            8 &lt;/head&gt;<br>
            9 &lt;body&gt;<br>
            10       &lt;h1&gt;Olá, mundo!&lt;/h1&gt;<br>
