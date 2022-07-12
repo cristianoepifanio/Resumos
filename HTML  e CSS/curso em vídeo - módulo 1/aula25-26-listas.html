@@ -20,28 +20,43 @@
             <li>Os itens são apresentados de maneiras mais simples;</li>
         </ol>
     </p>
-    <h3>Listas ordenadas.</h3>
-    <p>O exemplo de lista acima é um de uma lista ordenada, e escrevemos assim: <br>
+    <h3>Listas ordenadas &lt;ol&gt;.</h3>
+    <p>O exemplo de lista acima é um de uma lista ordenada, onde a ordem dos valores é importante e escrevemos assim: <br>
         <pre>
             <code>
                 &lt;ol type="1"&gt;
-                    &lt;li&gt;Possibilitam uma melhor leitura; &lt;/li&gt;
-                    &lt;li&gt;Deixam o conteúdo melhor organizados; &lt;/li&gt;
+                    &lt;li&gt;Possibilitam uma melhor leitura;&lt;/li&gt;
+                    &lt;li&gt;Deixam o conteúdo melhor organizados;&lt;/li&gt;
                     &lt;li&gt;Os itens são apresentados de maneiras mais simples;&lt;/li&gt;
                 &lt;/ol&gt;
             </code>
-        </pre> <br>
-        Segundo a <strong>W3C</strong>, para a tag &lt;Ol&gt; é obrigatório a tag de fechamento, mas para a tag &lt;li&gt; é opcional para HTML5. 
+        </pre>
+        Segundo a <strong>W3C</strong>, para a tag &lt;ol&gt; é obrigatório a tag de fechamento, mas para a tag &lt;li&gt; é opcional para HTML5. 
     </p>
-    <p>O parâmetro <em>type</em> possue as seguintes opções de valores: <br>
+    <p>O parâmetro <em>type</em> possui as seguintes opções de valores: <br>
     <ul type="disc">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>1- Para criar listas numeradas (1,2,3,4...)</li>
+        <li>A- Para criar listas alfabéticas maiúsculas (A,B,C,D...)</li>
+        <li>a- Para criar listas alfabéticas minúsculas (a,b,c,d....)</li>
+        <li>I- Para crias listas com algarismos romanos maiúsculas (I, II, III, IV...)</li>
+        <li>i- Para crias listas com algarismos romanos minúsculas (i, ii, iii, iv...)</li>
     </ul> </p>
-    <h3>Listas não ordenadas.</h3>
+    <p>Também logo após o type, pode-se ainda adicionar o parâmetro start="#", assim, a lista inicia após seu valor (#). </p>
+    <h3>Listas não ordenadas &lt;ul&gt;.</h3>
+    <p>São listas nas quais a ordem dos elementos não é importante, e o parâmetro <em>Type</em> possui os seguintes valores: <br>
+        <strong>disc</strong>: Uma bola preta totalmente preenchida; <br>
+        <ul type="disc"></ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li> <br>
+        <strong>circle</strong>: Uma bola com a borda preta mas sem preenchimento; <br>
+        <ul type="circle"></ul>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li> <br>
+        <strong>square</strong>: Pequeno quadrado totalmente preenchido.
+    </p>
+    <h3>Lista de definições &lt;dl&gt;</h3>
     <hr>
      <p><a href="../../index.html">Página inicial</a></p>
 </body>
