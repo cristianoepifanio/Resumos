@@ -10,7 +10,7 @@
 <body>
     <h1>Capítulo 11</h1>
     <hr>
-    <h2>Este resumo é fruto de um estudo das aulas <a href="https://www.youtube.com/watch?v=E01LDVj0Rpg&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=31">31</a>, <a href="#" target="_blank" rel="external">32</a>, <a href="#" target="_blank" rel="external">33</a>, <a href="#" target="_blank" rel="external">34</a>, <a href="#" target="_blank" rel="external">35</a> e <a href="#" target="_blank" rel="external">36</a>  do primeiro módulo do curso de HTML 5 e CSS 3 feito através do canal no youtube do Gustavo Guanabara.</h2>
+    <h2>Este resumo é fruto de um estudo das aulas <a href="https://www.youtube.com/watch?v=E01LDVj0Rpg&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=31" target="_blank" rel="external">31</a>, <a href="https://www.youtube.com/watch?v=E01LDVj0Rpg&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=32" target="_blank" rel="external">32</a>, <a href="https://www.youtube.com/watch?v=4OZYsFl-J9s&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=33" target="_blank" rel="external">33</a>, <a href="https://www.youtube.com/watch?v=DjOSM72cYac&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=34" target="_blank" rel="external">34</a>, <a href="https://www.youtube.com/watch?v=TCeyIwFGkYo&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=35" target="_blank" rel="external">35</a> e <a href="https://www.youtube.com/watch?v=3hng-hmSv2Y&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=36" target="_blank" rel="external">36</a>  do primeiro módulo do curso de HTML 5 e CSS 3 feito através do canal no youtube do Gustavo Guanabara.</h2>
     <h3>Imagens dinâmicas.</h3>
     <p>Sites lentos podem diminuir o tempo de retenção do usuário e isso pode prejudicar-lo no sistema de busca porque dessa forma o google indicará cada vez menos o seu site aos usuários, e ele pode ficar lento seja porque suas imagens sejam grandes demais, gerando um tempo maior para carregar seu site e/ou gerar barras de rolagem lateral. Por isso é importante cuidar das imagens, seja em relação aos direitos autorais, ao tamanho de armazenamento e também de suas dimensões na tela do usuário, e para isso utilizamos as tags &lt;picture&gt; e &lt;source&gt;. <br> Ex.:.
         <pre><code>
@@ -22,6 +22,35 @@
         </code></pre>
     Em relação ao max-midth, pode-se trabalhar com 650px px, 1030 px para evitar a barra de rolagem lateral.
     </p>
+    <h3>Audios</h3>
+    <p>Para a adição de audios utilizamos a seguinte tag: <br>
+        <pre><code>
+            &lt;audio preload="metadata" controls autoplay loop&gt;
+                &lt;source src="(áudio no fomato 1)" type="(media type)"&gt;
+                &lt;source src="(áudio no fomato 2)" type="(media type)"&gt;
+                &lt;source src="(áudio no fomato 3)" type="(media type)"&gt;
+                &lt;p&gt; Seu navegador não suporta o formato do áudio &lt;a ref="(caminho do áudio)" download="(nome do áudio.formato)" type="media type"&gt; baixe aqui.&lt;/a&gt;&lt;/p&gt;
+            &lt;/audio&gt;
+                </code></pre> 
+    <ul type="disc"></ul>   
+        <li>No atributo <strong>preload</strong> temos os seguintes valores:</li> 
+            <ul type="circle">
+                <li><em>auto</em> - vai carregar o arquivo de áudio inteiro assim que a página for
+            carregada, mesmo que o usuário nunca aperte o play.</li>
+                <li><em>metadata</em> - vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos, etc).</li>
+                <li><em>none</em> - não vai carregar absolutamente nada até que o usuário clique no botão
+            play ou um script inicie a reprodução.</li>
+            </ul> 
+        <li>O atributo <strong>controls</strong> vai apresentar o player na tela. Caso não seja colocado na tag
+            &lt;audio&gt;, o controle será transparente e o usuário não poderá interagir com ele. </li>
+        <li>O atributo <strong>autoplay</strong>, quando inserido, vai iniciar a reprodução do áudio assim que
+                a página for carregada.</li>
+        <li>O atributo <strong>loop</strong> vai fazer com que o áudio seja repetido eternamente assim que
+            terminar a sua reprodução. </li>    
+    </ul>
+    </p>
+    <h3>Vídeos</h3>
+    <p></p>
     <hr>
     <p><a href="../../index.html">Página inicial</a></p>
 </body>
