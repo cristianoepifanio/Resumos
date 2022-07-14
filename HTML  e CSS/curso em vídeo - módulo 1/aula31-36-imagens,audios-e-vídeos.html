@@ -14,11 +14,11 @@
     <h3>Imagens dinâmicas.</h3>
     <p>Sites lentos podem diminuir o tempo de retenção do usuário e isso pode prejudicar-lo no sistema de busca porque dessa forma o google indicará cada vez menos o seu site aos usuários, e ele pode ficar lento seja porque suas imagens sejam grandes demais, gerando um tempo maior para carregar seu site e/ou gerar barras de rolagem lateral. Por isso é importante cuidar das imagens, seja em relação aos direitos autorais, ao tamanho de armazenamento e também de suas dimensões na tela do usuário, e para isso utilizamos as tags &lt;picture&gt; e &lt;source&gt;. <br> Ex.:.
         <pre><code>
-    &lt;picture&gt;
-        &lt;source media="(max-midth: #px)" srcset="(imagem pequena)" type="(media type)"&gt;
-        &lt;source media="(max-midth: ##px)" srcset="(imagem média)" type="(media type)"&gt;
-        &lt;img src="(imagem maior)" alt="(texto alternativo"&gt;
-    &lt;/picture&gt;
+            &lt;picture&gt;
+                &lt;source media="(max-midth: #px)" srcset="(imagem pequena)" type="(media type)"&gt;
+                &lt;source media="(max-midth: ##px)" srcset="(imagem média)" type="(media type)"&gt;
+                &lt;img src="(imagem maior)" alt="(texto alternativo"&gt;
+            &lt;/picture&gt;
         </code></pre>
     Em relação ao max-midth, pode-se trabalhar com 650px px, 1030 px para evitar a barra de rolagem lateral.
     </p>
@@ -50,7 +50,23 @@
     </ul>
     </p>
     <h3>Vídeos</h3>
-    <p></p>
+    <p>A hospedagem de vídeos no própio site pode ser feita da seguinte forma: <br>
+        <pre><code>
+            &lt;video width=" poster="(imagem da capa)" controls autoplay &gt;
+                &lt;source src="(vídeo no fomato 1)" type="(media type)"&gt;
+                &lt;source src="(vídeo no fomato 2)" type="(media type)"&gt;
+                &lt;source src="(vídeo no fomato 3)" type="(media type)"&gt;
+                &lt;p&gt; Seu navegador não suporta o formato do vídeo.&lt;/p&gt;
+            &lt;/video&gt;
+                </code></pre> 
+        <ul type="disc">
+            <li><strong>width</strong> vai indicar a largura que o vídeo vai ter na tela. Por exemplo, 600px.</li> 
+            <li><strong>poster</strong> configura uma imagem que vai aparecer como uma capa, enquanto o visitante não aperta o play para reproduzir o vídeo. </li>
+            <li><strong>controls</strong> vai configurar se os controles do vídeo vão aparecer na parte inferior da
+                mídia, porquepor padrão, os controles não aparecerão.</li>
+            <li><strong>autoplay</strong> diz para o navegador se o vídeo vai começar a tocar automaticamente, assim que a página for carregada.</li>
+        </ul>
+    </p>
     <hr>
     <p><a href="../../index.html">Página inicial</a></p>
 </body>
