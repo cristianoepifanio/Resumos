@@ -1,7 +1,12 @@
 body {
     background-color: beige;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 25px;
+    padding: 12px;
 }   
-/* Possíveis paletas de cores:
-   #294FF2, #2B8AFC, #32B3E6, #2BF8FC, #29F2BE
-*/
+header {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 25px;
+}
