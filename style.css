@@ -27,6 +27,7 @@ a {
     display: flex;
     justify-content: center;
     align-content: center;
+    gap: 50px;
 }
 .modulos {
     display: flex;
