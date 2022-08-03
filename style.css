@@ -8,7 +8,7 @@ header {
     background-color: #06214D;
     color: #A58362;
     display: flex;
-    align-content: flex-end;
+    align-content: center;
     justify-content: center;
     gap: 25px;
 }
