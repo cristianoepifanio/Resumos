@@ -5,8 +5,19 @@ body {
     padding: 12px;
 }   
 header {
+    background-color: #06214D;
+    color: #A58362;
     display: flex;
-    align-content: center;
+    align-content: flex-end;
     justify-content: center;
     gap: 25px;
+}
+h1 {
+    color:#A58362;
+    background-color: #06214D;
+    padding: 50px;
+}
+a {
+    color: #06214D;
+    
 }
