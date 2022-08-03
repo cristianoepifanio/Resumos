@@ -8,9 +8,13 @@ header {
     background-color: #06214D;
     color: #A58362;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     gap: 25px;
+}
+.imagens-cabecalho-index {
+    gap: 50px;
+    align-items: center;
 }
 h1 {
     color:#A58362;
@@ -26,7 +30,7 @@ a {
 .interacao {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     gap: 50px;
 }
 .modulos {
