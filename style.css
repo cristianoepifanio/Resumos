@@ -26,6 +26,12 @@ a {
 }
 .seta {
     border-radius: 50%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.seta:hover{
+    background-color: #A58362;
 }
 .seta.voltar {
     transform: rotateY(180deg);
@@ -35,8 +41,27 @@ a {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    
 }
 .modulos {
     display: flex;
     flex-direction: column;
+    height: 400px;
+    width: 500px;
+    position: relative;
+}
+.modulo {
+    opacity: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    padding: 15px;
+}
+.modulo.selecionado {
+    opacity: 1;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
 }
