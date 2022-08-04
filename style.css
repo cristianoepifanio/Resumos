@@ -42,11 +42,13 @@ a {
     align-items: center;
     gap: 50px;
     padding-bottom: 50px;
-    
+    padding-top: 50px;
 }
 .modulos {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 400px;
     width: 500px;
     position: relative;
@@ -63,8 +65,13 @@ a {
     justify-content: center;
     border-radius: 3%;
     position: absolute;
+    height: 400px;
+    width: 500px;
     padding: 15px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.modulo:hover {
+    background-color: #F8F9FB;
 }
 .modulo.selecionado {
     opacity: 1;
