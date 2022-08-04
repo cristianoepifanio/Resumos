@@ -31,7 +31,7 @@ a {
     transition: background-color 0.2s ease-in-out;
 }
 .seta:hover{
-    background-color: #A58362;
+    background-color: #F8F9FB;
 }
 .seta.voltar {
     transform: rotateY(180deg);
@@ -41,6 +41,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    padding-bottom: 50px;
     
 }
 .modulos {
@@ -49,6 +50,10 @@ a {
     height: 400px;
     width: 500px;
     position: relative;
+    transition: background-color 0.2s ease-in-out;
+}
+.modulos:hover {
+    background-color: #F8F9FB;
 }
 .modulo {
     opacity: 0;
