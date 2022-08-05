@@ -10,7 +10,7 @@ avancar.addEventListener("click", function (){
     const moduloSelecionado = document.querySelector(".selecionado");
     moduloSelecionado.classList.remove("selecionado");
     moduloAtual++;
-    console.log(moduloAtual)
+    console.log(moduloAtual);
     modulo[moduloAtual].classList.add("selecionado");
     
 });
@@ -21,8 +21,7 @@ voltar.addEventListener("click", function (){
     const moduloSelecionado = document.querySelector(".selecionado");
     moduloSelecionado.classList.remove("selecionado");
     moduloAtual--;
-    console.log(moduloAtual)
+    console.log(moduloAtual);
     modulo[moduloAtual].classList.add("selecionado");
-    
-    
+        
 });
