@@ -46,6 +46,7 @@ abbr {
     align-items: center;
 }
 .seta {
+    background-color: #a5836286;
     border-radius: 50%;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     cursor: pointer;
@@ -66,18 +67,18 @@ abbr {
     padding-top: 50px;
 }
 .modulos {
+    background-color: #a5836213;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: auto;
     height: 400px;
     width: 500px;
     position: relative;
     transition: background-color 0.2s ease-in-out;
 }
 .modulos:hover {
-    background-color: #F8F9FB;
+    background-color: #f8f9fb;
 }
 .modulo {
     opacity: 0;
@@ -97,6 +98,45 @@ abbr {
     background-color: #F8F9FB;
 }
 .modulo.selecionado {
+    background-color: #a5836286;
+    opacity: 1;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+.modulosjs {
+    background-color: #a5836213;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 500px;
+    position: relative;
+    transition: background-color 0.2s ease-in-out;
+}
+.modulosjs:hover {
+    background-color: #f8f9fb;
+}
+.modulojs {
+    opacity: 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3%;
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    padding: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    transition: background-color 0.2s ease-in-out;
+}
+.modulojs:hover {
+    background-color: #F8F9FB;
+}
+.modulojs.selecionado {
+    background-color: #a5836286;
     opacity: 1;
     z-index: 1;
     align-items: center;
