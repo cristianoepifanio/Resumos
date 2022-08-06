@@ -2,6 +2,7 @@
 const avancar = document.getElementById("avancar");
 const voltar = document.getElementById("voltar");
 const modulo = document.querySelectorAll(".modulo");
+const modulojs = document.querySelectorAll(".modulojs");
 let moduloAtual = 0;
  
 // Botão de avançar os slides na página principal.
