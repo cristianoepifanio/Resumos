@@ -1,3 +1,4 @@
+/* tags */
 body {
     background-color: beige;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,10 +13,7 @@ header {
     justify-content: center;
     gap: 25px;
 }
-.imagens-cabecalho-index {
-    gap: 50px;
-    align-items: center;
-}
+
 h1 {
     color:#A58362;
     background-color: #06214D;
@@ -36,6 +34,16 @@ a {
 abbr {
     text-decoration: none;
     font-weight: 600;
+}
+
+/* Classes */
+.imagens {
+    border-radius: 15%;
+    gap: 20px;
+}
+.imagens-cabecalho-index {
+    gap: 50px;
+    align-items: center;
 }
 .seta {
     border-radius: 50%;
