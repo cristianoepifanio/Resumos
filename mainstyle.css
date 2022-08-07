@@ -15,6 +15,7 @@ a {
 }
 .blocos {
     padding: 10px;
+    margin: 25px;
     gap: 10px;
     display: flex;
     flex-direction: row;
