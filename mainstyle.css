@@ -12,6 +12,8 @@ header {
 a {
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #06214D;
+    font-size: 25px;
 }
 .blocos {
     padding: 10px;
