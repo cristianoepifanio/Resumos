@@ -37,6 +37,44 @@ abbr {
 }
 
 /* Classes */
+.a .referencias {
+    font-size: 10px;
+}
+.blocos {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: #a5836286;
+    padding: 5px;
+    margin: 25px;
+    border-radius: 3%;
+    width: 1000px;
+   
+}
+.bloco {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: #F8F9FB;
+    margin: 15px;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+}
+.bloco:hover {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    background-color: #F8F9FB;
+    margin: 15px;
+    width: 115px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    z-index: auto;
+}
 .imagens {
     border-radius: 15%;
     gap: 20px;
@@ -44,19 +82,6 @@ abbr {
 .imagens-cabecalho-index {
     gap: 50px;
     align-items: center;
-}
-.seta {
-    background-color: #a5836286;
-    border-radius: 50%;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    cursor: pointer;
-    transition: background-color 0.2s ease-in-out;
-}
-.seta:hover{
-    background-color: #F8F9FB;
-}
-.seta.voltar {
-    transform: rotateY(180deg);
 }
 .interacao {
     display: flex;
@@ -142,41 +167,16 @@ abbr {
     align-items: center;
     justify-content: center;
 }
-.blocos {
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+.seta {
     background-color: #a5836286;
-    padding: 5px;
-    margin: 25px;
-    border-radius: 3%;
-    width: 1000px;
-   
-}
-.bloco {
+    border-radius: 50%;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-    background-color: #F8F9FB;
-    margin: 15px;
-    padding: 5px;
-    width: 100px;
-    height: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10%;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
 }
-.bloco:hover {
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+.seta:hover{
     background-color: #F8F9FB;
-    margin: 15px;
-    width: 115px;
-    height: 45px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10%;
-    z-index: 1;
 }
-.a .referencias {
-    font-size: 10px;
+.seta.voltar {
+    transform: rotateY(180deg);
 }
