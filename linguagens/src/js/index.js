@@ -1,6 +1,8 @@
 /* Constantes para a construção do slide de módulos da página inicial.*/
 const avancar = document.getElementById("avancar");
 const voltar = document.getElementById("voltar");
+const avancarjs = document.getElementById("avancarjs");
+const voltarjs = document.getElementById("voltarjs");
 const modulo = document.querySelectorAll(".modulo");
 const modulojs = document.querySelectorAll(".modulojs");
 let moduloAtual = 0;
@@ -27,10 +29,10 @@ voltar.addEventListener("click", function (){
         
 });
 
-// Botão de avançar os slides na página sobre HTML e CSS.
-avancar.addEventListener("click", function (){
+// Botão de avançar os slides na página sobre JavaScript.
+avancarjs.addEventListener("click", function (){
     if(modulojsAtual === modulos.length - 1) return;
-    const modulojsSelecionado = document.querySelector(".selecionado");
+    const modulojsSelecionado = document.querySelectorAll (".selecionado");
     modulojsSelecionado.classList.remove("selecionado");
     modulojsAtual++;
     console.log(modulojsAtual);
@@ -38,8 +40,8 @@ avancar.addEventListener("click", function (){
     
 });
 
-// Botão de voltar os slides na página sobre HTML e CSS.
-voltar.addEventListener("click", function (){
+// Botão de voltar os slides na página sobre JavaScript.
+voltarjs.addEventListener("click", function (){
     if(modulojsAtual === 0) return;
     const modulojsSelecionado = document.querySelector(".selecionado");
     modulojsSelecionado.classList.remove("selecionado");
