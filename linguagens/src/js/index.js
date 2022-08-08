@@ -6,6 +6,7 @@ const voltarjs = document.getElementById("voltarjs");
 const modulo = document.querySelectorAll(".modulo");
 const modulojs = document.querySelectorAll(".modulojs");
 let moduloAtual = 0;
+let modulojsAtual = 0;
  
 // Botão de avançar os slides na página sobre HTML e CSS.
 avancar.addEventListener("click", function (){
@@ -31,8 +32,8 @@ voltar.addEventListener("click", function (){
 
 // Botão de avançar os slides na página sobre JavaScript.
 avancarjs.addEventListener("click", function (){
-    if(modulojsAtual === modulos.length - 1) return;
-    const modulojsSelecionado = document.querySelectorAll (".selecionado");
+    if(modulojsAtual === modulojs.length - 1) return;
+    const modulojsSelecionado = document.querySelector (".selecionado");
     modulojsSelecionado.classList.remove("selecionado");
     modulojsAtual++;
     console.log(modulojsAtual);
