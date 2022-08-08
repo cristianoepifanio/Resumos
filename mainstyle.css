@@ -29,3 +29,10 @@ a {
     gap: 20px;
     border-radius: 3%;
 }
+.bloco:hover {
+    background-color: rgb(141, 19, 172);
+    color: white;
+    padding: 12px;
+    gap: 20px;
+    border-radius: 3%;
+}
