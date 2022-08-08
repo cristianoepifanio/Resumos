@@ -26,3 +26,25 @@ voltar.addEventListener("click", function (){
     modulo[moduloAtual].classList.add("selecionado");
         
 });
+
+// Botão de avançar os slides na página sobre HTML e CSS.
+avancar.addEventListener("click", function (){
+    if(modulojsAtual === modulos.length - 1) return;
+    const modulojsSelecionado = document.querySelector(".selecionado");
+    modulojsSelecionado.classList.remove("selecionado");
+    modulojsAtual++;
+    console.log(modulojsAtual);
+    modulojs[modulojsAtual].classList.add("selecionado");
+    
+});
+
+// Botão de voltar os slides na página sobre HTML e CSS.
+voltar.addEventListener("click", function (){
+    if(modulojsAtual === 0) return;
+    const modulojsSelecionado = document.querySelector(".selecionado");
+    modulojsSelecionado.classList.remove("selecionado");
+    modulojsAtual--;
+    console.log(modulojsAtual);
+    modulojs[modulojsAtual].classList.add("selecionado");
+        
+});
