@@ -48,6 +48,7 @@ table, th, td {
 }
 td {
     padding: 5px;
+    
 }
 th {
     background-color: #06214D;
@@ -203,6 +204,6 @@ th {
 }
 .video-SEO {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-items: auto;
 }
