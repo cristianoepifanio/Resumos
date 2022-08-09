@@ -53,6 +53,7 @@ th {
     background-color: #06214D;
     color: #A58362;
     font-size: 19px;
+    padding: 3px;
 }
 
 
@@ -199,4 +200,9 @@ th {
 }
 .seta.voltar {
     transform: rotateY(180deg);
+}
+.video-SEO {
+    display: flex;
+    flex-direction: row;
+    justify-items: auto;
 }
