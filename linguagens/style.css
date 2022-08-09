@@ -29,6 +29,9 @@ abbr {
     text-decoration: none;
     font-weight: 600;
 }
+code {
+    color: #2b61b8;
+}
 h1 {
     color:#A58362;
     background-color: #06214D;
