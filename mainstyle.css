@@ -31,9 +31,12 @@ a {
     border-radius: 3%;
 }
 .bloco:hover {
-    background-color: rgb(141, 19, 172);
+    background-color: #0b3579;
     color: white;
     padding: 12px;
     gap: 20px;
     border-radius: 3%;
+}
+.fotoPerfil {
+    border-radius: 50%;
 }
