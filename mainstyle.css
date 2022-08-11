@@ -16,6 +16,9 @@ a {
     color: #06214D;
     font-size: 25px;
 }
+a:hover {
+    color: white;
+}
 .blocos {
     padding: 10px;
     margin: 25px;
@@ -24,19 +27,29 @@ a {
     flex-direction: row;
     justify-content: center;
 }
-.bloco {
+td {
     background-color: antiquewhite;
     padding: 12px;
     gap: 20px;
     border-radius: 3%;
+    transition: background-color 0.2s ease-in;
 }
-.bloco:hover {
+td:hover {
     background-color: #0b3579;
     color: white;
     padding: 12px;
     gap: 20px;
     border-radius: 3%;
 }
-.fotoPerfil {
-    border-radius: 50%;
+.foto-perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 20px;
+
+}
+.self-introdution {
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
 }
