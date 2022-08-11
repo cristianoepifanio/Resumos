@@ -1,5 +1,6 @@
 body {
-    background-color: #77c9d4;
+    background-image: linear-gradient(360deg, #06214D, #3c819e,  #94DFFF, #71C6EB);
+    background-attachment: fixed;
 }
 header {
     background-color: #06214D;
