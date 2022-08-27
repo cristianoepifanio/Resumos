@@ -45,6 +45,10 @@ h2 {
 h3 {
     color: #06214D;
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
 table, th, td {
     background-color: #ffffff;
     border: 2px solid #000000;
