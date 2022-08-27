@@ -3,6 +3,7 @@ body {
     background-attachment: fixed;
     margin: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
 }
 
 header {
@@ -60,4 +61,5 @@ td:hover {
     display: flex;
     flex-direction: row;
     font-size: 25px;
+    max-width: 100%;
 }
