@@ -82,7 +82,7 @@ th {
     padding: 5px;
     margin: 25px;
     border-radius: 3%;
-    width: 1000px;
+    max-width: 1000px;
    
 }
 .bloco {
@@ -124,6 +124,7 @@ th {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    width: max-content;
     padding-bottom: 50px;
     padding-top: 50px;
 }
