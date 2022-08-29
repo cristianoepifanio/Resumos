@@ -166,7 +166,7 @@ th {
     align-items: center;
     justify-content: center;
 }
-.modulosjs {
+/* .modulosjs {
     background-color: #a5836213;
     display: flex;
     flex-direction: column;
@@ -203,7 +203,7 @@ th {
     z-index: 1;
     align-items: center;
     justify-content: center;
-}
+} */
 .seta {
     background-color: #a5836286;
     border-radius: 50%;
