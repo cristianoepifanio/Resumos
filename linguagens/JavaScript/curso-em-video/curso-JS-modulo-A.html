@@ -45,8 +45,7 @@
             <td>Requer plug-ins diferentes.</td>
         </tr>
     </table>
-    <p> Resumindo, Java cria aplicações executadas em uma máquina virtual ou em um browser, ao passo que o código JavaScript é executado apenas em um browser. Além disso, o código Java precisa ser compilado para ser executado na máquina, enquanto o código JavaScript não é executado na máquina, sendo apenas interpretado pelo navegador. Também é importante ressaltar que JavaScript é executada no client-side da web, podendo ser utilizada para esboçar o comportamento de uma página web. <br>
-        Javascript fornece uma exposição do código. ou seja, existe uma fácil visibilidade do código-fonte. Quanto ao tempo de espera, o código script deve ser totalmente descarregado no navegador para que possa ser executado. O navegador (browser) precisa estar configurado para interpretar códigos script, caso contrário, apenas as instruções de marcação estruturais da página (HTML) serão interpretadas. Dependendo do conteúdo e das formatações aplicadas, o fator tempo pode ficar comprometido.</p>
+    <p> Javascript fornece uma exposição do código. ou seja, existe uma fácil visibilidade do código-fonte. Quanto ao tempo de espera, o código script deve ser totalmente descarregado no navegador para que possa ser executado. O navegador (browser) precisa estar configurado para interpretar códigos script, caso contrário, apenas as instruções de marcação estruturais da página (HTML) serão interpretadas. Dependendo do conteúdo e das formatações aplicadas, o fator tempo pode ficar comprometido.</p>
     <h2>As vantagens e as desvantagens do JavaScript.</h2>
     <p>
         <div class="vatagens-desvantagens">
@@ -105,6 +104,32 @@
             </table>
         </div>
     </p>
+    <h2>Características da linguagem JavaScript</h2>
+    <p> A estrutura básica do JavaScript consiste em simples comandos que serão interpretados diretamente pelos navegadores, na qual, devido ao "código sensitivo", se houver um simples erro de digitação, o navegador interpretará apenas as marcações HTML, ignorando o código JavaScript.</p>
+    <div class="vatagens-desvantagens">
+      <img src="../estrutura-básica-do-JavaScript.png" alt="Estrutura básica do JavaScript">
+        <ul type="none">
+          <li>A estrutura básica JavaScript possui alguns <b>parâmetros</b>.</li> <br>
+          <li><b>&lt;script language&gt;...&lt;/script&gt;</b> <br>
+            São os delimitadores, respectivamente, de início e fim da codificação JavaScript. Todos os comandos e instruções JavaScript devem estar internamente entre esses delimitadores.</li>
+          <li><b>&lt;!--</b> <br>
+            Tem por finalidade informar ao programa de navegação a possibilidade de pular as linhas de código do script, caso o browser não suporte o código JavaScript.</li>
+          <li><b>//--></b> <br>
+            É o indicador de finalização do conteúdo das linhas do código JavaScript.</li>
+          <li><b>/* Objetivo ... */ </b> <br>
+            Trata-se apenas de um parágrafo de documentação e comentário interno, que não será processado ou interpretado. É utilizado apenas para auxiliar na documentação do código.</li>
+          <li><b>var js_nome;</b> <br>
+            É a definição de uma variável identificada por js_nome, para reservar espaço na memória, onde uma informação será armazenada. <br>
+            A variável js_nome não faz parte do conjunto de palavras reservadas. No entanto, var é uma palavra reservada.</li>
+          <li><b>; (ponto-e-vírgula)</b> <br>
+            É utilizado para indicar o final da linha de comando. Esse sinal faz parte da sintaxe da linguagem. (sendo opcional hoje em dia) </li>
+          <li><b>js_nome = window.prompt</b> <br>
+            Por intermédio do método <i>prompt </i>(a ser estudado nos próximos capítulos), é apresentada uma caixa de mensagem de entrada de dados para o internauta digitar um nome. O conteúdo fornecido (nome) será atribuído (armazenado) na variável js_nome, por meio de uma operação de processamento: <i>js_nome</i> = ______;</li>
+          <li><b>document.write</b> <br>
+            Projeta a saída da informação processada. A instrução document.write permite executar a apresentação de determinada informação dentro da tela do documento. Observe a presença do comando document.write(), formado pelo objeto document e pelo método write (exclusivo da linguagem JavaScript).</li>
+        </ul>
+      
+    </div>
     
     
     <hr>
