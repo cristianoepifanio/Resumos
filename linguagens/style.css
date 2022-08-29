@@ -217,6 +217,11 @@ th {
 .seta.voltar {
     transform: rotateY(180deg);
 }
+.vatagens-desvantagens {
+    display: flex;
+    gap: 50px
+    ;
+}
 .video-SEO {
     display: flex;
     flex-direction: column;
