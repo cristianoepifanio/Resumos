@@ -75,7 +75,36 @@
         Mas se digitarmos apenas Number (n), o JavaScript "se vira" interpretando se é um número <i>Int</i> ou <i>Float</i>
     </p>
     <h2>Converção número &rarr; string</h2>
-    
+    <p>
+        <code>String(n)</code> ou <code>n.toString()</code> sendo n a variável que se quer converter.
+    </p>
+    <p>Outra forma de concatenar é: <code>`string ${var}`</code> conhecida como <i>template string</i>, onde podemos escrever de modo mais elegante.</p>
+    <p>Sendo <code>var s = JavaScript</code>, os comando: <br>
+        <ul>
+            <li> <b><code>s.length</code></b> - Diz quantos caracteres a string tem;</li>
+            <li><b><code>s.toUpper</code></b> - Deixa toda a string em Maiúsculo;</li>
+            <li><b><code>s.toLowerCase</code></b> - Deixa toda a string em Minúsculo;</li>
+            <li><b><code>document.write(`string`)</code></b> - Escreve no <i>body</i> da página.</li>
+        </ul>
+    </p>
+    <h2>Formatando números</h2>
+    <p>Sendo <code>var n1 = 1545.5</code>:
+        <ul>
+            <li><b><code>n1.toFixed(2)</code></b> &rarr; "1545.50"</li>
+            <li><b><code>n1.toFixed(2).replace('.',',')</code></b> &rarr; "1545,50"</li>
+            <li><b><code>n1.toLocaleString('pt-BR', {style: 'currency',currency:'BRL'})</code></b> &rarr; "R$ 1,545.50"</li>
+        </ul>
+    </p>
+    <h2>Operadores do JavaScript</h2>
+    <p>Os operadores são os seguintes abaixo, cujo a ordem de precedência sucede de cima pra baixo (&darr;):
+        <ul>
+            <li>Aritmétricos - (parenteses <code>()</code>, potência <code>**</code>, multiplicação <code>*</code>, divisão <code>/</code>, resto de divisão <code>%</code>, soma <code>+</code> e subtração <code>-</code>) segundo a ordem de precedência (&rarr;);</li>
+            <li>Atribuição - (<code>n = n + 3</code> ou simplesmente <code>n += 3</code>) por exemplo;</li>
+            <li>Relacionais -(&gt;, &lt;, &gt;=, &lt;=, ==, !=) </li>
+            <li>Lógicos - (!, &&, ll)</li>
+            <li>Ternário - (`string` ? true : false) </li>
+        </ul>
+    </p>
 
 
     <hr>
