@@ -10,6 +10,74 @@
 </head>
 <body>
     
+    <h2>Comentário em JavaScript</h2>
+    <p>São muito importantes para a organização dos nossos códigos ou para a copreensão do mesmo por um terceiro. E eles são feitos da seguinte forma:
+        <ul type="none">
+            <li><b>//</b> - para comentar uma única linha</li>
+            <li><b>/* */</b> - para comentar mais de uma linha de código.</li>
+        </ul>
+    </p>
+    <h2>Identificadores</h2>
+    <p>Regras para a nomeação de variáveis:
+        <ul>
+            <li>Podem começar com <b>letra</b>, <b>$</b> ou <b>_</b>;</li>
+            <li>Não podem começar com <b>números</b>;</li>
+            <li>É possível usar <b>letras</b> ou <b>números</b>;</li>
+            <li>É possível usar <b>acentos</b> e <b>símbolos</b>;</li>
+            <li>Não podem conter  <b>espaços</b>;</li>
+            <li>Não podem ser <b>palavras reservadas</b>;</li>
+        </ul>
+    <b>Obs.:</b> - Letras maiúsculas e minúsculas fazem diferença. Tente utilizar nomes coerentes para as variáveis.
+    </p>
+    <h2>Data types</h2>
+    <p>São eles:
+        <ul>
+            <li>Number</li>
+            <li>infinity, <abbr title="Not a number">NaN</abbr></li>
+            <li>string</li>
+            <li>boolean</li>
+            <li>null</li>
+            <li>undefined</li>
+            <li>object ({},[])</li>
+            <li>array</li>
+            <li>function</li>
+        </ul>
+    </p>
+    <h2>Data Handling</h2>
+    <!-- <script>
+        var nome = window.prompt("Qual é o seu nome?")
+        window.alert("É um prazer te conhecer " + nome + ", Seja bem vindo ao resumo do Módulo B dos estudos de JavaScript.")
+    </script> -->
+    <p>Qual você entrou nessa página, perguntamos o seu nome e lhe saudamos de maneira pessoal, essa interação foi feita utilizando o seguinte código no JavaScript:
+    <pre><code>
+        &lt;script&gt;
+            var nome = window.prompt("Qual é o seu nome?")
+            window.alert("É um prazer te conhecer " + nome + ", Seja bem vindo ao resumo do Módulo B dos estudos de JavaScript.")
+        &lt;/script&gt;
+    </code></pre>
+    </p>
+    <h2>Converção string &rarr; número</h2>
+    <!-- <script>
+        var n1 = Number.parseFloat(window.prompt("Digite um número."))
+    </script> -->
+    <p>
+        <pre><code>
+            &lt;script&gt;
+                var n1 = Number.parseInt(window.prompt("Digite um número."))
+                (Se o número for inteiro.)
+            &lt;/script&gt;
+            <br>
+            &lt;script&gt;
+            var n1 = Number.parseFloat(window.prompt("Digite um número."))
+                (Se o número for racional.)
+            &lt;/script&gt;
+        </code></pre>
+        Mas se digitarmos apenas Number (n), o JavaScript "se vira" interpretando se é um número <i>Int</i> ou <i>Float</i>
+    </p>
+    <h2>Converção número &rarr; string</h2>
+    
+
+
     <hr>
      <p><a href="../../indexjs.html">Página inicial</a></p>
 </body>
