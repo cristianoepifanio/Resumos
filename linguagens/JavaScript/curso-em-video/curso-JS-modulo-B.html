@@ -9,7 +9,37 @@
     <title>Módulo B</title>
 </head>
 <body>
-    
+    <!-- Parte da interatividade inical do site -->
+    <script>
+        // Declarações de variáveis
+
+        // Variáveis de entrada
+        var nome = window.prompt("Olá! tudo bom? Gostariamos de te conhecer melhor. Qual é o seu nome?")
+        window.alert("É um prazer te conhecer " + nome + ", seja bem vindo ao resumo do Módulo B dos estudos de JavaScript.")
+        var n1 = Number.parseFloat(window.prompt("Digite um número."))
+        var n2 = Number.parseFloat(window.prompt("Digite um segundo número."))
+        // Operadores aritrimétricos
+        var soma = n1 + n2
+        var subtracao = n1 - n2
+        var multiplicacao = n1 * n2
+        var divisao = n1 / n2
+        var resto = n1 % n2
+        var potencia = n1 ** n2
+        // Atribuição simples
+        var a = 5 + n1
+        var b = a%7
+        var c = 8*b**3
+        var d =  10-a/5
+        var e = 6*c/d 
+        // Dados de saída    
+        window.alert(`Seu nome possui ${nome.length} letras e escrito só com letras maiúsculas e minúsculas fica ${nome.toUpperCase()} e ${nome.toLowerCase()} respectivamente.`)
+        window.alert(`A soma entre os números ${n1.toFixed(2)} e ${n2.toFixed(2)} é igual a ${soma.toFixed(2)};
+        a subtração é igual a ${subtracao};
+        a multiplicação é igual a ${multiplicacao};
+        a divisão é igual a ${divisao};
+        o resto de divisão é igual a ${resto};
+        e a potência do primeiro pelo segundo é ${potencia}.`)
+    </script>
     <h2>Comentário em JavaScript</h2>
     <p>São muito importantes para a organização dos nossos códigos ou para a copreensão do mesmo por um terceiro. E eles são feitos da seguinte forma:
         <ul type="none">
@@ -44,10 +74,7 @@
         </ul>
     </p>
     <h2>Data Handling</h2>
-    <script>
-        var nome = window.prompt("Qual é o seu nome?")
-        window.alert("É um prazer te conhecer " + nome + ", Seja bem vindo ao resumo do Módulo B dos estudos de JavaScript.")
-    </script>
+    
     <p>Qual você entrou nessa página, perguntamos o seu nome e lhe saudamos de maneira pessoal, essa interação foi feita utilizando o seguinte código no JavaScript:
     <pre><code>
         &lt;script&gt;
@@ -57,9 +84,7 @@
     </code></pre>
     </p>
     <h2>Converção string &rarr; número</h2>
-    <script>
-        var n1 = Number.parseFloat(window.prompt("Digite um número."))
-    </script>
+    
     <p>
         <pre><code>
             &lt;script&gt;
@@ -72,7 +97,7 @@
                 (Se o número for racional.)
             &lt;/script&gt;
         </code></pre>
-        Mas se digitarmos apenas Number (n), o JavaScript "se vira" interpretando se é um número <i>Int</i> ou <i>Float</i>
+        Mas se digitarmos apenas <code>Number(n)</code>, o JavaScript "se vira" interpretando se é um número <i>Int</i> ou <i>Float</i>
     </p>
     <h2>Converção número &rarr; string</h2>
     <p>
@@ -98,11 +123,11 @@
     <h2>Operadores do JavaScript</h2>
     <p>Os operadores são os seguintes abaixo, cujo a ordem de precedência sucede de cima pra baixo (&darr;):
         <ul>
-            <li>Aritmétricos - (parenteses <code>()</code>, potência <code>**</code>, multiplicação <code>*</code>, divisão <code>/</code>, resto de divisão <code>%</code>, soma <code>+</code> e subtração <code>-</code>) segundo a ordem de precedência (&rarr;);</li>
+            <li>Aritmétricos - (parenteses <code>()</code>, potência <code>**</code>, multiplicação <code>*</code>, divisão <code>/</code>, resto de divisão <code>%</code>, soma <code>+</code> e subtração <code>-</code>);</li>
             <li>Atribuição - (<code>n = n + 3</code> ou simplesmente <code>n += 3</code>) por exemplo;</li>
-            <li>Relacionais -(&gt;, &lt;, &gt;=, &lt;=, ==, !=) </li>
-            <li>Lógicos - (!, &&, ll)</li>
-            <li>Ternário - (`string` ? true : false) </li>
+            <li>Relacionais - (&gt;, &lt;, &gt;=, &lt;=, ==, !=); </li>
+            <li>Lógicos - (!, &&, ll);</li>
+            <li>Ternário - (`string` ? true : false).</li>
         </ul>
     </p>
 
