@@ -16,8 +16,8 @@
         // Variáveis de entrada
         var nome = window.prompt("Olá! tudo bom? Seja bem vindo, bem vinda ao resumo do Módulo B dos estudos de JavaScript. Gostariamos de te conhecer melhor. Qual é o seu nome?")
         window.alert("É um prazer te conhecer " + nome + ", espero que conteúdo aqui contido lhe seja útil.")
-        var n1 = Number.parseFloat(window.prompt("Talvez você saiba ou tenha ouvido falar que JavaScript é resposável pela interação do site. Agora mesmo estamos interagindo com você graças a essa linguagem. Para uma melhor esperiência, te pedimos para digite um número qualquer."))
-        var n2 = Number.parseFloat(window.prompt("E agora digite um segundo número, e com esses dois, te mostreremos o que se pode fazer com eles utilizando o JavaScript."))
+        var n1 = Number.parseFloat(window.prompt("Talvez saibas ou tenha ouvido falar que JavaScript é resposável pela interação do site. Agora mesmo estamos interagindo com você graças a essa linguagem. Para uma melhor esperiência, te pedimos para digite um número qualquer."))
+        var n2 = Number.parseFloat(window.prompt("E agora digite um segundo número, e com esses dois, te mostraremos o que se pode fazer com eles utilizando o JavaScript."))
         // Operadores aritrimétricos
         var soma = n1 + n2
         var subtracao = n1 - n2
@@ -32,13 +32,21 @@
         var d =  10-a/5
         var e = 6*c/d 
         // Dados de saída    
-        window.alert(`Seu nome possui ${nome.length} letras e escrito só com letras maiúsculas e minúsculas fica ${nome.toUpperCase()} e ${nome.toLowerCase()} respectivamente.`)
-        window.alert(`A soma entre os números ${n1} e ${n2} é igual a ${soma};
+        window.alert(`Os números ${n1} e ${n2} foram aqueles escolhidos você, muito obrigado, com eles, poderemos com os operadores aritimétricos, expressar que:
+        a soma  é igual a ${soma};
         a subtração é igual a ${subtracao};
         a multiplicação é igual a ${multiplicacao};
         a divisão é igual a ${divisao};
         o resto de divisão é igual a ${resto};
         e a potência do primeiro pelo segundo é ${potencia}.`)
+        window.alert(`Com os operadores lógicos, poderemos mostrar que:
+        ${n1} é maior que ${n2}? (${n1 > n2})
+        ${n1} é menor que ${n2}? (${n1 < n2})
+        ${n1} é maior ou igual que ${n2}? (${n1 >= n2})
+        ${n1} é menor ou igual que ${n2}? (${n1 <= n2})
+        ${n1} é igual que ${n2}? (${n1 == n2})
+        ${n1} é diferente que ${n2}? (${n1 != n2})`)
+        window.alert(`Poderemos informar que seu nome (${nome}) possui ${nome.length} letras e que se for escrito só com letras maiúsculas e minúsculas, ele fica ${nome.toUpperCase()} e ${nome.toLowerCase()} respectivamente.`)
     </script>
     <h2>Comentário em JavaScript</h2>
     <p>São muito importantes para a organização dos nossos códigos ou para a copreensão do mesmo por um terceiro. E eles são feitos da seguinte forma:
