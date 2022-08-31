@@ -14,10 +14,10 @@
         // Declarações de variáveis
 
         // Variáveis de entrada
-        var nome = window.prompt("Olá! tudo bom? Gostariamos de te conhecer melhor. Qual é o seu nome?")
-        window.alert("É um prazer te conhecer " + nome + ", seja bem vindo ao resumo do Módulo B dos estudos de JavaScript.")
-        var n1 = Number.parseFloat(window.prompt("Digite um número."))
-        var n2 = Number.parseFloat(window.prompt("Digite um segundo número."))
+        var nome = window.prompt("Olá! tudo bom? Seja bem vindo, bem vinda ao resumo do Módulo B dos estudos de JavaScript. Gostariamos de te conhecer melhor. Qual é o seu nome?")
+        window.alert("É um prazer te conhecer " + nome + ", espero que conteúdo aqui contido lhe seja útil.")
+        var n1 = Number.parseFloat(window.prompt("Talvez você saiba ou tenha ouvido falar que JavaScript é resposável pela interação do site. Agora mesmo estamos interagindo com você graças a essa linguagem. Para uma melhor esperiência, te pedimos para digite um número qualquer."))
+        var n2 = Number.parseFloat(window.prompt("E agora digite um segundo número, e com esses dois, te mostreremos o que se pode fazer com eles utilizando o JavaScript."))
         // Operadores aritrimétricos
         var soma = n1 + n2
         var subtracao = n1 - n2
@@ -33,7 +33,7 @@
         var e = 6*c/d 
         // Dados de saída    
         window.alert(`Seu nome possui ${nome.length} letras e escrito só com letras maiúsculas e minúsculas fica ${nome.toUpperCase()} e ${nome.toLowerCase()} respectivamente.`)
-        window.alert(`A soma entre os números ${n1.toFixed(2)} e ${n2.toFixed(2)} é igual a ${soma.toFixed(2)};
+        window.alert(`A soma entre os números ${n1} e ${n2} é igual a ${soma};
         a subtração é igual a ${subtracao};
         a multiplicação é igual a ${multiplicacao};
         a divisão é igual a ${divisao};
@@ -128,6 +128,28 @@
             <li>Relacionais - (&gt;, &lt;, &gt;=, &lt;=, ==, !=); </li>
             <li>Lógicos - (!, &&, ll);</li>
             <li>Ternário - (`string` ? true : false).</li>
+        </ul>
+    </p>
+    <h2>Auto-atribuição</h2>
+    <p>
+        <ul type="none">
+            <li><code> n = n + 4 </code> ou <code>n += 4</code></li>
+            <li><code>n = n - 5</code> ou <code>n -= 5</code></li>
+            <li><code>n = n*4</code> ou <code>n *= 4</code></li>
+            <li><code>n = n/2</code> ou <code>n /= 2</code></li>
+            <li><code>n = n**4</code> ou <code>n **= 4</code></li>
+            <li><code>n = n%3</code> ou <code>n %= 3</code></li>
+        </ul>
+    </p>
+    <h2>Operadores relacionais</h2>
+    <p>
+        <ul type="none">
+            <li><code> n1 &gt; n2</code></li>
+            <li><code> n1 &lt; n2</code></li>
+            <li><code> n1 =&gt; n2</code></li>
+            <li><code> n1 =&lt; n2</code></li>
+            <li><code> n1 == n2</code></li>
+            <li><code> n1 != n2</code></li>
         </ul>
     </p>
 
