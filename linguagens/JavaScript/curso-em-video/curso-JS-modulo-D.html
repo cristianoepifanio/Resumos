@@ -12,24 +12,23 @@
     <h2>Condições</h2>
     <p>Condições são muito importante para a construção de um sistema, pois, lhe permite tomar “rotas” alternativas, faz com que, dependendo do seu caso, o programa se comporta de uma forma “adaptável” ao seu problema, procurando resolvê-lo na condição em que você se encontra.
         <ol>
-            <li>Condição simples:
-                <ol type="a">
-     <li> No caso em que o sistema "muda" apenas se o valor da condição é <i>verdadeiro</i>. 
+            <li>Condição simples: <br>
+            No caso em que o sistema "muda" apenas se o valor da condição é <i>verdadeiro</i>. 
         <pre><code>
          if (// condição proposta por você) {
              //O que fazer se a condição tiver o valor de TRUE
          }
-     </code></pre>
-    </li>
-     <li> No caso em que o valor da condição for <i>verdadeiro</i>, o sistema "toma" uma decisão, e se for <i>falso</i> toma outra.
+        </code></pre>
+            
+            <li>Condição composta: <br> No caso em que o valor da condição for <i>verdadeiro</i>, o sistema "toma" uma decisão, e se for <i>falso</i> toma outra.
         <pre><code>
-         if (// condição proposta por você) {
-             //O que fazer se a condição tiver o valor de TRUE
-         } else {
-             //O que fazer se a condição tiver o valor de FALSE
-         }
-                    </code></pre></li>
-                </ol>
+            if (// condição proposta por você) {
+                //O que fazer se a condição tiver o valor de TRUE
+            } else {
+                //O que fazer se a condição tiver o valor de FALSE
+             }
+        </code></pre>
+
             </li>
         </ol>
     </p>
@@ -49,7 +48,7 @@
     var país = window.document.querySelector('input#pais')
     var resultadoDeNacionalidade = window.document.querySelector('div#testeDeNacionalidade')
     resultadoDeNacionalidade.innerHTML = `<p>Você é: </p>`
-    if (país == 'Brasil') {
+    if (país === 'Brasil') {
         resultadoDeNacionalidade.innerHTML += `<p>brasileiro.</p>` 
     } else {
         resultadoDeNacionalidade.innerHTML += `<p>estrangeiro.</p>`
