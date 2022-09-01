@@ -1,4 +1,11 @@
+// ------------------------------------------------
+//             RESUMO DE HTML E CSS
+// ------------------------------------------------
+
+
 /* Constantes para a construção do slide de módulos da página inicial.*/
+// Presente na página inicial de HTML e CSS
+
 const avancar = document.getElementById("avancar");
 const voltar = document.getElementById("voltar");
 const avancarjs = document.getElementById("avancarjs");
@@ -51,3 +58,36 @@ voltarjs.addEventListener("click", function (){
     modulojs[modulojsAtual].classList.add("selecionado");
         
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ------------------------------------------------
+//             RESUMO DE JAVASCRIPT
+// ------------------------------------------------
+
+// Função para verificar a velocidade e indicar que está multado caso seja acima da velocidade permitida
+// Esta presente na página: JavaScript ----> Módulo D 
+function calcular() {
+    var txtv = window.document.querySelector('input#txtvel')
+    var res = window.document.querySelector('div#res')
+    var velocidade = Number(txtv.value)
+    res.innerHTML = `<p>A sua velocidade atual é de <strong>${velocidade} KM/h</strong></p>`
+    if (velocidade > 60) {
+        res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MULTADO</strong>. Procure pagá-la o quanto antes.</p>`
+    }
+    res.innerHTML += `Tome sempre cuidado, use sempre cinto de segurança.`
+}

@@ -38,19 +38,25 @@
     <div id="res">
 
     </div>
+    <p>Agora outro
+    </p>
+    Qual é o seu país? <input type="text" name="pais" id="pais"> <input type="button" value="ENTER" onclick="console()">
+    <div id="testeDeNacionalidade">
+
+    </div>
     <script>
-        function calcular() {
-            var txtv = window.document.querySelector('input#txtvel')
-            var res = window.document.querySelector('div#res')
-            var velocidade = Number(txtv.value)
-            res.innerHTML = `<p>A sua velocidade atual é de <strong>${velocidade} KM/h</strong></p>`
-            if (velocidade > 60) {
-                res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MULTADO</strong>. Procure pagá-la o quanto antes.</p>`
-            }
-            res.innerHTML += `Tome sempre cuidado, use sempre cinto de segurança.`
-        }
+        function console() {
+    var país = window.document.querySelector('input#pais')
+    var resultadoDeNacionalidade = window.document.querySelector('div#testeDeNacionalidade')
+    resultadoDeNacionalidade.innerHTML = `<p>Você é: </p>`
+    if (país == 'Brasil') {
+        resultadoDeNacionalidade.innerHTML += `<p>brasileiro.</p>` 
+    } else {
+        resultadoDeNacionalidade.innerHTML += `<p>estrangeiro.</p>`
+    }
+}
     </script>
-    
+    <script src="../../src/js/index.js"></script>
     <hr>
      <p><a href="../../indexjs.html">Página inicial</a></p>
 </body>
