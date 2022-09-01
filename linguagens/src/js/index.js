@@ -86,7 +86,7 @@ function calcular() {
     var res = window.document.querySelector('div#res')
     var velocidade = Number(txtv.value)
     res.innerHTML = `<p>A sua velocidade atual é de <strong>${velocidade} KM/h</strong></p>`
-    if (velocidade > 60) {
+    if (velocidade > 65) {
         res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MULTADO</strong>. Procure pagá-la o quanto antes.</p>`
     }
     res.innerHTML += `Tome sempre cuidado, use sempre cinto de segurança.`
