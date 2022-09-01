@@ -9,6 +9,47 @@
     <title>Módulo D</title>
 </head>
 <body>
+    <h2>Condições</h2>
+    <p>Condições são muito importante para a construção de um sistema, pois, lhe permite tomar “rotas” alternativas, faz com que, dependendo do seu caso, o programa se comporta de uma forma “adaptável” ao seu problema, procurando resolvê-lo na condição em que você se encontra.
+        <ol>
+            <li>Condição simples:
+                <ol type="a">
+     <li> No caso em que o sistema "muda" apenas se o valor da condição é <i>verdadeiro</i>. 
+        <pre><code>
+         if (// condição proposta por você) {
+             //O que fazer se a condição tiver o valor de TRUE
+         }
+     </code></pre>
+    </li>
+     <li> No caso em que o valor da condição for <i>verdadeiro</i>, o sistema "toma" uma decisão, e se for <i>falso</i> toma outra.
+        <pre><code>
+         if (// condição proposta por você) {
+             //O que fazer se a condição tiver o valor de TRUE
+         } else {
+             //O que fazer se a condição tiver o valor de FALSE
+         }
+                    </code></pre></li>
+                </ol>
+            </li>
+        </ol>
+    </p>
+    <p>Exemplo Utilizado na aula de uma condição simples apenas para caso a condição seja verdadeira:</p>
+    Qual a sua velocidade? <input type="number" name="txtvel" id="txtvel"> Km/h. <input type="button" value="Verificar situação" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var velocidade = Number(txtv.value)
+            res.innerHTML = `<p>A sua velocidade atual é de <strong>${velocidade} KM/h</strong></p>`
+            if (velocidade > 60) {
+                res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MULTADO</strong>. Procure pagá-la o quanto antes.</p>`
+            }
+            res.innerHTML += `Tome sempre cuidado, use sempre cinto de segurança.`
+        }
+    </script>
     
     <hr>
      <p><a href="../../indexjs.html">Página inicial</a></p>
