@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Parte da interatividade inical do site -->
-    <script>
+     <script>
         // Declarações de variáveis
 
         // Variáveis de entrada
@@ -50,15 +50,11 @@
         window.alert(`Poderemos informar que seu nome (${nome}) possui ${nome.length} letras e que se for escrito só com letras maiúsculas e minúsculas, ele fica "${nome.toUpperCase()}" e "${nome.toLowerCase()}" respectivamente.`)
 
     </script>
-    <h2>Comentário em JavaScript</h2>
-    <p>São muito importantes para a organização dos nossos códigos ou para a copreensão do mesmo por um terceiro. E eles são feitos da seguinte forma:
-        <ul type="none">
-            <li><b>//</b> - para comentar uma única linha</li>
-            <li><b>/* */</b> - para comentar mais de uma linha de código.</li>
-        </ul>
-    </p>
-    <h2>Identificadores</h2>
-    <p> As variáveis são algo muito importante na linguagem de programação regras para a nomeação de variáveis:
+    
+    <h2>Variáveis</h2>
+    
+    <p> As variáveis são algo muito importante na linguagem de programação, com elas, pode-se recolher dados do usuário e manipulá-los para retornar determinada informação que fizemos na interação inicial desta página por exemplo. Para nomeá-las, tem se que respeitar determinadas regras, são algumas delas, as que seguem abaixo:
+
         <ul>
             <li>Podem começar com <b>letra</b>, <b>$</b> ou <b>_</b>;</li>
             <li>Não podem começar com <b>números</b>;</li>
@@ -69,8 +65,8 @@
         </ul>
     <b>Obs.:</b> - Letras maiúsculas e minúsculas fazem diferença. Tente utilizar nomes coerentes para as variáveis.
     </p>
-    <h2>Data types</h2>
-    <p>São eles:
+    
+    <p>Os <b>Data types</b> São os formatos de variáveis que encontramos em uma linguagem de programação, sendo eles do tipo:
         <ul>
             <li>Number</li>
             <li>infinity, <abbr title="Not a number">NaN</abbr></li>
@@ -83,15 +79,13 @@
             <li>function</li>
         </ul>
     </p>
-    <h2>Data Handling</h2>
     
-    <p>Qual você entrou nessa página, perguntamos o seu nome e lhe saudamos de maneira pessoal, essa interação foi feita utilizando o seguinte código no JavaScript:
-    <pre><code>
-        &lt;script&gt;
-            var nome = window.prompt("Qual é o seu nome?")
-            window.alert("É um prazer te conhecer " + nome + ", Seja bem vindo ao resumo do Módulo B dos estudos de JavaScript.")
-        &lt;/script&gt;
-    </code></pre>
+    <h2>Comentário em JavaScript</h2>
+    <p>São muito importantes para a organização dos nossos códigos ou para a copreensão do mesmo por um terceiro. E eles são feitos da seguinte forma:
+        <ul type="none">
+            <li><b>//</b> - para comentar uma única linha</li>
+            <li><b>/* */</b> - para comentar mais de uma linha de código.</li>
+        </ul>
     </p>
     <h2>Converção string &rarr; número</h2>
     
@@ -162,7 +156,44 @@
             <li><code> n1 != n2</code></li>
         </ul>
     </p>
-
+    <h2>Data Handling</h2>
+    
+    <p>
+        <script>
+            document.write(`Quando você entrou nessa página ${nome}, perguntamos o seu nome e lhe saudamos de maneira pessoal, essa interação foi feita utilizando o seguinte código no JavaScript:`) 
+            </script>
+    <pre><code>
+        &lt;script&gt;
+            var nome = window.prompt("Qual é o seu nome?")
+            window.alert("É um prazer te conhecer " + nome + ", Seja bem vindo ao resumo do Módulo B dos estudos de JavaScript.")
+        &lt;/script&gt;
+    </code></pre>
+    <script>
+        document.write(`Aqui, o seu nome ${nome} se tornou uma variável e com ele, pudemos lhe retornar a informação de quantas letras ele possui (${nome.length} no seu caso) e como ele ficaria escrito apenas com letras maiúsculas e minúsculas. Também com os números ${n1} e ${n2} que você inseriu, que colocamos o nome de n1 e n2 respectivamente, foi-se possível realizar as operações matemáticas que te foram mostradas da seguinte forma:`) 
+    </script>
+    <pre><code>
+        &lt;script&gt;
+            window.alert(`Os números ${n1} e ${n2} foram aqueles escolhidos você, muito obrigado, com eles, poderemos com os operadores aritimétricos, expressar que:
+            a soma  é igual a ${soma};
+            a subtração é igual a ${subtracao};
+            a multiplicação é igual a ${multiplicacao};
+            a divisão é igual a ${divisao};
+            o resto de divisão é igual a ${resto};
+            e a potência do primeiro pelo segundo é ${potencia}.`)
+            
+            window.alert(`Com os operadores lógicos, poderemos mostrar que:
+            ${n1} é maior que ${n2}? (${n1 > n2})
+            ${n1} é menor que ${n2}? (${n1 < n2})
+            ${n1} é maior ou igual que ${n2}? (${n1 >= n2})
+            ${n1} é menor ou igual que ${n2}? (${n1 <= n2})
+            ${n1} é igual que ${n2}? (${n1 == n2})
+            ${n1} é diferente que ${n2}? (${n1 != n2})`)
+           
+            window.alert(`Poderemos dizer que ${n1} ${n1 % 2 == 0 ? ' é par e' :' é impar e'}  que ${n2} ${n2 % 2 == 0 ? ' é par' : ' é impar'}.`)
+        &lt;/script&gt;
+    </code></pre>
+    
+    </p>
 
     <hr>
      <p><a href="../../indexjs.html">Página inicial</a></p>
