@@ -11,51 +11,84 @@
 <body>
     <h2>Condições</h2>
     <p>Condições são muito importante para a construção de um sistema, pois, lhe permite tomar “rotas” alternativas, faz com que, dependendo do seu caso, o programa se comporta de uma forma “adaptável” ao seu problema, procurando resolvê-lo na condição em que você se encontra.
-        <ol>
-            <li>Condição simples: <br>
-            No caso em que o sistema "muda" apenas se o valor da condição é <i>verdadeiro</i>. 
-        <pre><code>
-         if (// condição proposta por você) {
-             //O que fazer se a condição tiver o valor de TRUE
-         }
-        </code></pre>
-            
-            <li>Condição composta: <br> No caso em que o valor da condição for <i>verdadeiro</i>, o sistema "toma" uma decisão, e se for <i>falso</i> toma outra.
-        <pre><code>
-            if (// condição proposta por você) {
-                //O que fazer se a condição tiver o valor de TRUE
-            } else {
-                //O que fazer se a condição tiver o valor de FALSE
+    
+    <h3>Condição simples:</h3>
+         <p>
+             No caso em que o sistema "muda" apenas se o valor da condição é <i>verdadeiro</i>. 
+                     <pre><code>
+             if (// condição proposta por você) {
+                 //O que fazer se a condição tiver o valor de TRUE
              }
-        </code></pre>
-
-            </li>
-        </ol>
-    </p>
-    <p>Exemplo Utilizado na aula de uma condição simples apenas para caso a condição seja verdadeira:</p>
-    Qual a sua velocidade? <input type="number" name="txtvel" id="txtvel"> Km/h. <input type="button" value="Verificar situação" onclick="calcular()">
-    <div id="res">
-
-    </div>
-    <p>Agora outro
-    </p>
-    Qual é o seu país? <input type="text" name="pais" id="pais"> <input type="button" value="ENTER" onclick="console()">
-    <div id="testeDeNacionalidade">
-
-    </div>
-    <script>
-        function console() {
-    var país = window.document.querySelector('input#pais')
-    var resultadoDeNacionalidade = window.document.querySelector('div#testeDeNacionalidade')
-    resultadoDeNacionalidade.innerHTML = `<p>Você é: </p>`
-    if (país === 'Brasil') {
-        resultadoDeNacionalidade.innerHTML += `<p>brasileiro.</p>` 
-    } else {
-        resultadoDeNacionalidade.innerHTML += `<p>estrangeiro.</p>`
-    }
-}
-    </script>
-    <script src="../../src/js/index.js"></script>
+                     </code></pre>
+                     Exemplo Utilizado na aula de uma condição simples apenas para caso a condição seja verdadeira: <br>
+                 Qual a sua velocidade? <input type="number" name="txtvel" id="txtvel"> Km/h. <input type="button" value="Verificar situação" onclick="calcular()">
+                 <div id="res">
+             
+                 </div>
+                 <script>
+                     function calcular() {
+                     var txtv = window.document.querySelector('input#txtvel')
+                     var res = window.document.querySelector('div#res')
+                     var velocidade = Number(txtv.value)
+                     res.innerHTML = `<p>A sua velocidade atual é de <strong>${velocidade} KM/h</strong></p>`
+                     if (velocidade > 65) {
+                res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MULTADO</strong>. Procure pagá-la o quanto antes.</p>`
+                     }
+                     res.innerHTML += `Tome sempre cuidado, use sempre cinto de segurança.`
+                     
+             } 
+             
+                 </script>
+         </p>
+    <br>
+    <h3>Condição composta:</h3>
+     <p>
+         No caso em que o valor da condição for <i>verdadeiro</i>, o sistema "toma" uma decisão, e se for <i>falso</i> toma outra.
+            <pre><code>
+                if (// condição proposta por você) {
+                    //O que fazer se a condição tiver o valor de TRUE
+                } else {
+                    //O que fazer se a condição tiver o valor de FALSE
+                 }
+            </code></pre>
+            Qual é o seu país? <input type="text" name="pais" id="pais"> <input type="button" value="ENTER" onclick="console()">
+             <div id="testeDeNacionalidade">
+         
+             </div>
+             <script>
+            function console() {
+             var país = window.document.querySelector('input#pais')
+             var resultadoDeNacionalidade = window.document.querySelector('div#testeDeNacionalidade')
+             if (país === 'Brasil') {
+            resultadoDeNacionalidade.innerHTML += `<p> Você é brasileiro.</p>` 
+             } else {
+            resultadoDeNacionalidade.innerHTML += `<p> Você é estrangeiro.</p>`
+             }
+         }
+             </script>
+     </p>
+    
+    <h3>Condição alinhada:</h3>
+    <p>Qual é a sua idade? <input type="number" name="idade" id="idadeDeVoto"> <input type="button" value="verificar" onclick="calcular()"></p>
+        <div id="votar">
+            
+        </div>
+        <!-- <script>
+            function calcular() {
+                var idade = window.document.querySelector('input#idadeDeVoto')
+                var votar = window.document.querySelector('div#votar')
+                var idadeDeVoto = Number(idade.value)
+                if (idadeDeVoto < 16) {
+                    votar.innerHTML += `Sua idade é ${idadeDeVoto} e portanto você não pode votar ainda.`
+                } else if (idadeDeVoto <= 18 || idadeDeVoto >= 67)  {
+                    votar.innerHTML += `Sua idade é ${idadeDeVoto} e portanto o voto é opcional.`
+                } else {
+                    votar.innerHTML += `Sua idade é ${idadeDeVoto} e o seu voto é obrigatório.`
+                }
+            }
+        </script> -->
+    
+        <p></p>
     <hr>
      <p><a href="../../indexjs.html">Página inicial</a></p>
 </body>
