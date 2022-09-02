@@ -36,7 +36,7 @@
         a soma  é igual a ${soma};
         a subtração é igual a ${subtracao};
         a multiplicação é igual a ${multiplicacao};
-        a divisão é igual a ${divisao};
+        a divisão é igual a ${divisao.toFixed(2)};
         o resto de divisão é igual a ${resto};
         e a potência do primeiro pelo segundo é ${potencia}.`)
         window.alert(`Com os operadores lógicos, poderemos mostrar que:
@@ -53,7 +53,7 @@
 
     <h2>Variáveis</h2>
     
-    <p>  As variáveis são algo muito importante na linguagem de programação, com elas, pode-se recolher dados do usuário e manipulá-los para retornar determinada informação que fizemos na interação inicial desta página por exemplo. Para nomeá-las, tem se que respeitar determinadas regras, são algumas delas, as que seguem abaixo:
+    <p>  As variáveis são algo muito importante na linguagem de programação, com elas, pode-se recolher dados do usuário e manipulá-los para retornar determinada informação, como fizemos na interação inicial desta página por exemplo. Para nomeá-las, tem se que respeitar determinadas regras, são algumas delas, as que seguem abaixo:
 
         <ul>
             <li>Podem começar com <b>letra</b>, <b>$</b> ou <b>_</b>;</li>
@@ -138,16 +138,16 @@
             <li><b>Operadores Binários</b>, que são aqueles aplicados sobre duas variáveis, isto é, encontram-se dentro de uma expressão aritmética, atuando sobre dois operandos, que podem ser duas variáveis, duas constantes, ou uma variável e uma constante.
                 <ul>
                     <li><code>z= x+y</code> - somatória entre as variáveis x e y e a atribuição do resultado à variável z)</li>
-                    <li><code>z=5+7</code> - somatória entre as constantes 5 e 7 e a atribuição do resultado à variável z)</li>
-                    <li><code>z=x+7</code> - somatória entre os operandos – respectivamente uma variável e uma constante - x e 7 e a atribuição do resultado à variável z).</li>
+                    <li><code>z= 5+7</code> - somatória entre as constantes 5 e 7 e a atribuição do resultado à variável z)</li>
+                    <li><code>z= x+7</code> - somatória entre os operandos – respectivamente uma variável e uma constante - x e 7 e a atribuição do resultado à variável z).</li>
                 </ul>
             </li>
         </ul>
         
-        são os seguintes abaixo, cujo a ordem de precedência sucede de cima pra baixo (&darr;):
+        Os operadores do JavaScript são os seguintes abaixo, cujo a ordem de precedência sucede de cima para baixo (&darr;):
         <ul>
             <li>Aritmétricos - Os operadores aritméticos ou matemáticos são os tipos de operadores empregados para efetuar cálculos por meio de expressões ou fórmulas matemáticas (parenteses <code>()</code>, potência <code>**</code>, multiplicação <code>*</code>, divisão <code>/</code>, resto de divisão <code>%</code>, soma <code>+</code> e subtração <code>-</code>);</li>
-            <li>Atribuição - (<code>n = n + 3</code> ou simplesmente <code>n += 3</code>) por exemplo;</li>
+            <li>Atribuição - São descritos como <code>n = n + 3</code> ou simplesmente <code>n += 3</code> por exemplo;</li>
             <li>Relacionais - Os operadores relacionais ou de comparação são tipos de operadores empregados em uma estrutura de decisão condicional para estabelecer uma comparação ou conferência de valores e atributos dentro de uma relação. (&gt;, &lt;, &gt;=, &lt;=, ==, !=); </li>
             <li>Lógicos - Operadores lógicos ou booleanos, aplicados juntamente com os operadores relacionais ou de comparação dentro de uma estrutura condicional (!, &&, ll);</li>
             <li>Ternário - (`string` ? true : false).</li>
@@ -157,7 +157,7 @@
     <p>
         <ul type="none">
             <li><code> n = n + 4 </code> ou <code>n += 4</code> - Efetua a somatória e, em seguida, a atribuição.</li>
-            <li><code>n = n - 5</code> ou <code>n -= 5</code> = Aplica a subtração de valor e a atribuição na sequência.</li>
+            <li><code>n = n - 5</code> ou <code>n -= 5</code> - Aplica a subtração de valor e a atribuição na sequência.</li>
             <li><code>n = n*4</code> ou <code>n *= 4</code> - Realiza a multiplicação de valores e, na sequência, a atribuição.</li>
             <li><code>n = n/2</code> ou <code>n /= 2</code> - Efetua a divisão entre os valores e, em seguida, a atribuição.</li>
             <li><code>n = n**4</code> ou <code>n **= 4</code> - Faz a potenciação e em seguida, a atribuição.</li>
@@ -225,7 +225,7 @@
         &lt;/script&gt;
     </code></pre>
     <script>
-        document.write(`Aqui, o seu nome ${nome} se tornou uma variável e com ele, pudemos lhe retornar a informação de quantas letras ele possui (${nome.length} no seu caso) e como ele ficaria escrito apenas com letras maiúsculas e minúsculas. Também com os números ${n1} e ${n2} que você inseriu, que colocamos o nome de n1 e n2 respectivamente, foi-se possível realizar as operações matemáticas que te foram mostradas da seguinte forma:`) 
+        document.write(`Aqui ${nome}, o seu nome se tornou uma variável e com ele, pudemos lhe retornar a informação de quantas letras ele possui (${nome.length} no seu caso) e como ele ficaria escrito apenas com letras maiúsculas e minúsculas. Também com os números ${n1} e ${n2} que você inseriu, que colocamos o nome de n1 e n2 respectivamente, foi-se possível realizar as operações matemáticas que te foram mostradas da seguinte forma:`) 
     </script>
     <pre><code>
         &lt;script&gt;
