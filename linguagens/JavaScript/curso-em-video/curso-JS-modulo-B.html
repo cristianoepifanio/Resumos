@@ -161,22 +161,57 @@
             <li><code>n = n*4</code> ou <code>n *= 4</code> - Realiza a multiplicação de valores e, na sequência, a atribuição.</li>
             <li><code>n = n/2</code> ou <code>n /= 2</code> - Efetua a divisão entre os valores e, em seguida, a atribuição.</li>
             <li><code>n = n**4</code> ou <code>n **= 4</code> - Faz a potenciação e em seguida, a atribuição.</li>
-            <li><code>n = n%3</code> ou <code>n %= 3</code> - Aplica a divisão com o armazenamento do resto e a atribuiçã</li>
+            <li><code>n = n%3</code> ou <code>n %= 3</code> - Aplica a divisão com o armazenamento do resto e a atribuição.</li>
         </ul>
     </p>
     <h2>Operadores relacionais</h2>
     <p>
         <ul type="none">
-            <li><code> n1 &gt; n2</code></li>
-            <li><code> n1 &lt; n2</code></li>
-            <li><code> n1 =&gt; n2</code></li>
-            <li><code> n1 =&lt; n2</code></li>
-            <li><code> n1 == n2</code></li>
-            <li><code> n1 != n2</code></li>
+            <li><code> n1 &gt; n2</code> - n1 é maior que n2.</li>
+            <li><code> n1 &lt; n2</code> - n1 é menor que n2.</li>
+            <li><code> n1 =&gt; n2</code> - n1 é maior ou igual que n2.</li>
+            <li><code> n1 =&lt; n2</code> - n1 é menor ou igual que n2.</li>
+            <li><code> n1 == n2</code> - n1 é igual que n2.</li>
+            <li><code> n1 != n2</code> - n1 é diferente que n2.</li>
         </ul>
     </p>
     <h2>Operadores Lógicos ou Booleanos</h2>
-    <p>São aplicados juntamente com os operadores relacionais ou de comparação dentro de uma estrutura condicional.</p>
+    <p>São aplicados juntamente com os operadores relacionais ou de comparação dentro de uma estrutura condicional e são do tipo:</p>
+    <h3>conjunção (.e.)</h3>
+    <p>Uma conjunção (.e.), representada na linguagem JavaScript pela simbologia &&, é a busca por um resultado verdadeiro por meio da validação de todos os elementos condicionais. Por exemplo:
+
+        <pre>
+            <code>
+                if (curso=='DS' && turma!= 0) {
+                    window.alert(‘Ola Mundo!’);
+                }
+            </code>
+        </pre>
+        No exemplo apresentado, temos o operador lógico de conjunção && (.e.) determinando que, por meio de uma decisão condicional SE (if), a mensagem ‘Ola Mundo!’ só será apresentada se curso for igual (==) a ‘DS’ e (&&) turma for diferente de (!=) 0 (zero). Isso quer dizer que as duas condições (curso e turma) devem apresentar resultados verdadeiros para que a mensagem seja exibida. Caso contrário, a condição não é executada.</p>
+        <h3>disjunção (.ou.)</h3>
+        <p>Uma disjunção (.ou.), representada na linguagem JavaScript pela simbologia ||, é a busca por um resultado verdadeiro por meio da validação de, pelo menos, um dos elementos condicionais. Por exemplo:
+
+        <pre>
+            <code>
+                if (curso==’DS’ || turma== 1) {
+                    window.alert(‘Ola Mundo!’);
+                }
+            </code>
+        </pre>
+            Nesse caso, o operador lógico || (.ou.) de disjunção determina que, por meio de uma decisão condicional SE (if), a mensagem ‘Ola Mundo!’ será apresentada se curso for igual (==) a ‘DS’ ou (||) turma for igual a (==) 1 (um).
+            
+            Isso quer dizer que, pelo menos, uma das condições (curso ou turma) deve apresentar resultado verdadeiro para que a mensagem seja exibida. Caso contrário, a condição não é executada.</p>
+        <h3>negação (.não.)</h3>
+        <p>Uma negação (.não.), representada na linguagem JavaScript pela simbologia !, é a busca por um resultado verdadeiro por meio da validação invertida do elemento condicional ou dos elementos condicionais. Por exemplo:
+
+        <pre>
+            <code>
+                if ( !(curso==’DS’) ) {
+                    window.alert(‘Ola Mundo!’);
+                }
+            </code>
+        </pre>
+            Nesse exemplo, o operador lógico ! (.não.) de negação determina que, por meio de uma decisão condicional SE (if) invertida, a mensagem ‘Ola Mundo!’ será apresentada se curso for não (!) igual (==) a ‘DS’, isto é, se o curso não for ‘DS’, a mensagem será exibida. Caso contrário, a condição não será verdadeira e, consequentemente, não executada.</p>
     <h2>Data Handling</h2>
     
     <p>
