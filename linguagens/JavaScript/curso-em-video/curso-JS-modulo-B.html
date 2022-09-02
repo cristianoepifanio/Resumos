@@ -10,7 +10,7 @@
 </head>
 <body>
     <!-- Parte da interatividade inical do site -->
-     <script>
+     <!-- <script>
         // Declarações de variáveis 
 
         // Variáveis de entrada
@@ -49,11 +49,11 @@
         window.alert(`Poderemos dizer que ${n1} ${n1 % 2 == 0 ? ' é par e' :' é impar e'}  que ${n2} ${n2 % 2 == 0 ? ' é par' : ' é impar'}.`)
         window.alert(`Poderemos informar que seu nome (${nome}) possui ${nome.length} letras e que se for escrito só com letras maiúsculas e minúsculas, ele fica "${nome.toUpperCase()}" e "${nome.toLowerCase()}" respectivamente.`)
 
-    </script>
+    </script> -->
 
     <h2>Variáveis</h2>
     
-    <p> As variáveis são algo muito importante na linguagem de programação, com elas, pode-se recolher dados do usuário e manipulá-los para retornar determinada informação que fizemos na interação inicial desta página por exemplo. Para nomeá-las, tem se que respeitar determinadas regras, são algumas delas, as que seguem abaixo:
+    <p>  As variáveis são algo muito importante na linguagem de programação, com elas, pode-se recolher dados do usuário e manipulá-los para retornar determinada informação que fizemos na interação inicial desta página por exemplo. Para nomeá-las, tem se que respeitar determinadas regras, são algumas delas, as que seguem abaixo:
 
         <ul>
             <li>Podem começar com <b>letra</b>, <b>$</b> ou <b>_</b>;</li>
@@ -65,7 +65,9 @@
         </ul>
     <b>Obs.:</b> - Letras maiúsculas e minúsculas fazem diferença. Tente utilizar nomes coerentes para as variáveis.
     </p>
-    
+    <h3>Identificadores</h3>
+    <p><b>Identificadores</b>, como o próprio nome está dizendo, são “rótulos” ou nomes definidos para campos, variáveis, métodos e funções. Um item importante a ser considerado são os <u>caracteres acentuados</u>. É muito importante estarmos atentos a esse fato, pois, os caracteres acentuados são denominados caracteres compostos, sendo interpretados pelo sistema, diferentemente dos caracteres não acentuados (não compostos). Por exemplo: "<i>Programação</i> é um identificador diferente de <i>Programacao</i>". Uma outra característica existente na linguagem de programação JavaScript, que diferencia os seus identificadores, é o <b>sensitive case</b>, isto é, a diferença entre as letras maiúsculas e minúsculas, ou seja, "<i>Programação</i> é um identificador diferente de <i>programação</i>".</p>
+    <h3>Data types</h3>
     <p>Os <b>Data types</b> São os formatos de variáveis que encontramos em uma linguagem de programação, sendo eles do tipo:
         <ul>
             <li>Number</li>
@@ -125,24 +127,41 @@
         </ul>
     </p>
     <h2>Operadores do JavaScript</h2>
-    <p>Os operadores são os seguintes abaixo, cujo a ordem de precedência sucede de cima pra baixo (&darr;):
+    <p>Os operadores são elementos que atuam sobre os operandos (variáveis e constantes). São simbologias aplicadas em atribuições, relacionamentos ou comparações, cálculos, ordenações de dados etc. Eles podem serem:
         <ul>
-            <li>Aritmétricos - (parenteses <code>()</code>, potência <code>**</code>, multiplicação <code>*</code>, divisão <code>/</code>, resto de divisão <code>%</code>, soma <code>+</code> e subtração <code>-</code>);</li>
+            <li><b>Operadores Unários</b>, onde são aqueles aplicados a uma única variável, isto é, que atuam sobre um único operando. A aplicação para inversão de sinal, tornando o valor do operando (variável) negativo ou positivo, é um exemplo.
+                <ul>
+                    <li><code>-x</code> (o valor que está armazenado no operando x é negativo)</li>
+                    <li><code>x++</code> (incremento de +1 na variável x).</li>
+                </ul>
+            </li>
+            <li><b>Operadores Binários</b>, que são aqueles aplicados sobre duas variáveis, isto é, encontram-se dentro de uma expressão aritmética, atuando sobre dois operandos, que podem ser duas variáveis, duas constantes, ou uma variável e uma constante.
+                <ul>
+                    <li><code>z= x+y</code> - somatória entre as variáveis x e y e a atribuição do resultado à variável z)</li>
+                    <li><code>z=5+7</code> - somatória entre as constantes 5 e 7 e a atribuição do resultado à variável z)</li>
+                    <li><code>z=x+7</code> - somatória entre os operandos – respectivamente uma variável e uma constante - x e 7 e a atribuição do resultado à variável z).</li>
+                </ul>
+            </li>
+        </ul>
+        
+        são os seguintes abaixo, cujo a ordem de precedência sucede de cima pra baixo (&darr;):
+        <ul>
+            <li>Aritmétricos - Os operadores aritméticos ou matemáticos são os tipos de operadores empregados para efetuar cálculos por meio de expressões ou fórmulas matemáticas (parenteses <code>()</code>, potência <code>**</code>, multiplicação <code>*</code>, divisão <code>/</code>, resto de divisão <code>%</code>, soma <code>+</code> e subtração <code>-</code>);</li>
             <li>Atribuição - (<code>n = n + 3</code> ou simplesmente <code>n += 3</code>) por exemplo;</li>
-            <li>Relacionais - (&gt;, &lt;, &gt;=, &lt;=, ==, !=); </li>
-            <li>Lógicos - (!, &&, ll);</li>
+            <li>Relacionais - Os operadores relacionais ou de comparação são tipos de operadores empregados em uma estrutura de decisão condicional para estabelecer uma comparação ou conferência de valores e atributos dentro de uma relação. (&gt;, &lt;, &gt;=, &lt;=, ==, !=); </li>
+            <li>Lógicos - Operadores lógicos ou booleanos, aplicados juntamente com os operadores relacionais ou de comparação dentro de uma estrutura condicional (!, &&, ll);</li>
             <li>Ternário - (`string` ? true : false).</li>
         </ul>
     </p>
     <h2>Auto-atribuição</h2>
     <p>
         <ul type="none">
-            <li><code> n = n + 4 </code> ou <code>n += 4</code></li>
-            <li><code>n = n - 5</code> ou <code>n -= 5</code></li>
-            <li><code>n = n*4</code> ou <code>n *= 4</code></li>
-            <li><code>n = n/2</code> ou <code>n /= 2</code></li>
-            <li><code>n = n**4</code> ou <code>n **= 4</code></li>
-            <li><code>n = n%3</code> ou <code>n %= 3</code></li>
+            <li><code> n = n + 4 </code> ou <code>n += 4</code> - Efetua a somatória e, em seguida, a atribuição.</li>
+            <li><code>n = n - 5</code> ou <code>n -= 5</code> = Aplica a subtração de valor e a atribuição na sequência.</li>
+            <li><code>n = n*4</code> ou <code>n *= 4</code> - Realiza a multiplicação de valores e, na sequência, a atribuição.</li>
+            <li><code>n = n/2</code> ou <code>n /= 2</code> - Efetua a divisão entre os valores e, em seguida, a atribuição.</li>
+            <li><code>n = n**4</code> ou <code>n **= 4</code> - Faz a potenciação e em seguida, a atribuição.</li>
+            <li><code>n = n%3</code> ou <code>n %= 3</code> - Aplica a divisão com o armazenamento do resto e a atribuiçã</li>
         </ul>
     </p>
     <h2>Operadores relacionais</h2>
