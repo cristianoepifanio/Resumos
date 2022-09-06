@@ -59,7 +59,7 @@
             function console() {
              var país = window.document.querySelector('input#pais')
              var resultadoDeNacionalidade = window.document.querySelector('div#testeDeNacionalidade')
-             if (resultadoDeNacionalidade === 'Brasil') {
+             if (país === 'Brasil') {
             resultadoDeNacionalidade.innerHTML += `<p> Você é brasileiro.</p>` 
              } else {
             resultadoDeNacionalidade.innerHTML += `<p> Você é estrangeiro.</p>`
@@ -87,8 +87,75 @@
                 }
             }
         </script> -->
-    
         <p></p>
+    <h2>Pegar a  hora no momento presente do usuário</h2>
+    <p> Ao entrar nesse site, lhe saudamos de acordo com o seu horário atual. Fizemos isso, utilizando o seguinte código:
+        <pre>
+            <code>
+            &lt;script&gt;
+                var agora = new Date()
+                var hora = agora.getHours()
+                var minutos = agora.getMinutes()
+                if (hora < 12) {
+                    window.alert(`Bom dia, agora são ${hora}:${minutos} horas da manhã.`)
+                } else if (hora <= 18) {
+                    window.alert(`Boa tarde, agora são ${hora}:${minutos} horas`)
+                } else {
+                    window.alert(`Boa noite, agora são ${hora}:${minutos} horas`)
+                }
+            &lt;/script&gt;
+            </code>
+        </pre>
+    </p>
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var minutos = agora.getMinutes()
+        var dia = new Date()
+        var diaSem = dia.getDay()
+
+        // condição para dizer as horas.
+        if (hora < 12) {
+            window.alert(`Bom dia, agora são ${hora}:${minutos} horas da manhã.`)
+        } else if (hora <= 18) {
+            window.alert(`Boa tarde, agora são ${hora}:${minutos} horas.`)
+        } else {
+            window.alert(`Boa noite, agora são ${hora}:${minutos} horas.`)
+        }
+
+        // condição para dizer o dia.
+        switch(diaSem) {
+            case 0: 
+                window.alert(`E bom domingo.`)
+                break
+            case 1: 
+                window.alert(`E hoje é segunda-feira, bom inicio de semana.`)
+                break
+            case 2: 
+                window.alert(`E hoje é terça-feira.`)
+                break
+            case 3: 
+                window.alert(`E hoje é quarta-feira.`)
+                break
+            case 4: 
+                window.alert(`E hoje é quinta-feira.`)
+                break
+            case 5: 
+                window.alert(`E hoje é sexta-feira, Bom final de semana.`)
+                break
+            case 6: 
+                window.alert(`E hoje é sábado.`)
+                break
+            default: 
+                window.alert(`[ERRO] Dia inválido.`)
+        }
+            
+    </script>
+    <h2>Condição múltipla</h2>
+    <p>Muito utilizada quanto se têm valores fixos e muitas possibilidades além de True e False. Para isso utilizamos o switch, que opera somente quando os valores são <i>inteiros</i> ou <i>strings</i>.</p>
+
+
+
     <hr>
      <p><a href="../../indexjs.html">Página inicial</a></p>
 </body>
