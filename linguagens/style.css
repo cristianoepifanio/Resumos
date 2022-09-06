@@ -32,9 +32,10 @@ abbr {
     font-weight: 600;
 }
 code {
-    color: #2b61b8;
+    color: black;
     max-width: 100%;
     height: auto;
+    
 }
 h1 {
     color:#A58362;

@@ -20,26 +20,55 @@
                  //O que fazer se a condição tiver o valor de TRUE
              }
                      </code></pre>
-                     Exemplo Utilizado na aula de uma condição simples apenas para caso a condição seja verdadeira: <br>
-                 Qual a sua velocidade? <input type="number" name="txtvel" id="txtvel"> Km/h. <input type="button" value="Verificar situação" onclick="calcular()">
-                 <div id="res">
+
+    <p>O exemplo utilizado na aula foi de uma condição simples, apenas para caso a condição seja verdadeira:</p>
+    <p>Digite abaixo um valor de velocidade que você queira, este programa mostra a sua velocidade e se você foi multado ao ultrapassar uma velocidade de 60 Km/h. Mas comumente os radares eletrônicos possuem 5 Km/h de tolerância, também aqui, só aparecerá a mensagem de multa a partir de 65 Km/h.</p>
+     Qual a sua velocidade? <input type="number" name="txtvel" id="txtvel"> Km/h. <input type="button" value="Verificar situação" onclick="calcular()">
+    <div id="res">
              
-                 </div>
-                 <script>
-                     function calcular() {
-                     var txtv = window.document.querySelector('input#txtvel')
-                     var res = window.document.querySelector('div#res')
-                     var velocidade = Number(txtv.value)
-                     res.innerHTML = `<p>A sua velocidade atual é de <strong>${velocidade} KM/h</strong></p>`
-                     if (velocidade > 65) {
-                res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MULTADO</strong>. Procure pagá-la o quanto antes.</p>`
-                     }
-                     res.innerHTML += `Tome sempre cuidado, use sempre cinto de segurança.`
-                     
-             } 
-             
-                 </script>
-         </p>
+    </div>
+     <script>
+         function calcular() {
+         var txtv = window.document.querySelector('input#txtvel')
+         var res = window.document.querySelector('div#res')
+         var velocidade = Number(txtv.value)
+         res.innerHTML = `<p>A sua velocidade atual é de <strong>${velocidade} KM/h</strong></p>`
+         if (velocidade > 65) {
+    res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MULTADO</strong>. Procure pagá-la o quanto antes.</p>`
+         }
+         res.innerHTML += `Tome sempre cuidado, use sempre cinto de segurança.`
+          
+  } 
+  
+      </script>
+    </p>
+    <p>
+        E foi feita da seguinte forma:
+        <pre>
+            <code>
+                Qual a sua velocidade? &lt;input type="number" name="txtvel" id="txtvel"&gt; Km/h. &lt;input type="button" value="Verificar situação" onclick="calcular()"&gt;
+                &lt;div id="res"&gt;
+                         
+                &lt;/div&gt;
+                &lt;script&gt;
+                    function calcular() {
+                    var txtv = window.document.querySelector('input#txtvel')
+                    var res = window.document.querySelector('div#res')
+                    var velocidade = Number(txtv.value)
+                    res.innerHTML = `&lt;p&gt;A sua velocidade atual é de &lt;strong&gt;${velocidade} KM/h&lt;/strong&gt;&lt;/p&gt;`
+                    <strong>
+                    if (velocidade > 65) {
+                    res.innerHTML += `&lt;p&gt;Ela está acima de 60 Km/h e por isso você foi &lt;strong&gtMULTADO&lt;/strong&gt;. Procure pagá-la o quanto antes.&lt;/p&gt;`
+                    }
+                    </strong>
+                    res.innerHTML += `Tome sempre cuidado, use sempre cinto de segurança.`
+                    
+            } 
+            
+                &lt;/script&gt;  
+            </code>
+        </pre>
+    </p>
     <br>
     <h3>Condição composta:</h3>
      <p>
@@ -51,6 +80,7 @@
                     //O que fazer se a condição tiver o valor de FALSE
                  }
             </code></pre>
+            Este programa mostra a mensagem de que "Você é um estrangeiro" para qualquer país que seja diferente de "Brasil".
             Qual é o seu país? <input type="text" name="pais" id="pais"> <input type="button" value="ENTER" onclick="console()">
              <div id="testeDeNacionalidade">
          
@@ -66,6 +96,29 @@
              }
          }
              </script>
+     </p>
+     <p>E ele foi feito da seguinte forma:
+        <pre>
+            <code>
+                Qual é o seu país? &lt;input type="text" name="pais" id="pais"&gt; &lt;input type="button" value="ENTER" onclick="console()"&gt;
+                &lt;div id="testeDeNacionalidade"&gt;
+            
+                &lt;/div&gt;
+                &lt;script&gt;
+               function console() {
+                var país = window.document.querySelector('input#pais')
+                var resultadoDeNacionalidade = window.document.querySelector('div#testeDeNacionalidade')
+                <strong>
+                if (país === 'Brasil') {
+                               resultadoDeNacionalidade.innerHTML += `&lt;p&gt; Você é brasileiro.&lt;/p&gt;`
+                } else {
+                               resultadoDeNacionalidade.innerHTML += `&lt;p&gt; Você é estrangeiro.&lt;/p&gt;`
+                }
+                </strong>
+            }
+                &lt;/script&gt; 
+            </code>
+        </pre>
      </p>
     
     <h3>Condição alinhada:</h3>
@@ -96,13 +149,15 @@
                 var agora = new Date()
                 var hora = agora.getHours()
                 var minutos = agora.getMinutes()
-                if (hora < 12) {
+                <strong>
+                if (hora &gt; 12) {
                     window.alert(`Bom dia, agora são ${hora}:${minutos} horas da manhã.`)
-                } else if (hora <= 18) {
+                } else if (hora &gt;= 18) {
                     window.alert(`Boa tarde, agora são ${hora}:${minutos} horas`)
                 } else {
                     window.alert(`Boa noite, agora são ${hora}:${minutos} horas`)
                 }
+                </strong>
             &lt;/script&gt;
             </code>
         </pre>
