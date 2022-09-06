@@ -218,6 +218,10 @@ th {
 .seta.voltar {
     transform: rotateY(180deg);
 }
+.programaJS {
+    border: 2px solid #000000;
+    padding: 30px;
+}
 .vatagens-desvantagens {
     display: flex;
     gap: 50px

@@ -22,26 +22,27 @@
                      </code></pre>
 
     <p>O exemplo utilizado na aula foi de uma condição simples, apenas para caso a condição seja verdadeira:</p>
-    <p>Digite abaixo um valor de velocidade que você queira, este programa mostra a sua velocidade e se você foi multado ao ultrapassar uma velocidade de 60 Km/h. Mas comumente os radares eletrônicos possuem 5 Km/h de tolerância, também aqui, só aparecerá a mensagem de multa a partir de 65 Km/h.</p>
-     Qual a sua velocidade? <input type="number" name="txtvel" id="txtvel"> Km/h. <input type="button" value="Verificar situação" onclick="calcular()">
-    <div id="res">
-             
+    <div class="programaJS">
+        <p>Digite abaixo um valor de velocidade que você queira, este programa mostra a sua velocidade e se você foi multado ao ultrapassar uma velocidade de 60 Km/h. Mas comumente os radares eletrônicos possuem 5 Km/h de tolerância, também aqui, só aparecerá a mensagem de multa a partir de 65 Km/h.</p>
+         Qual a sua velocidade? <input type="number" name="txtvel" id="txtvel"> Km/h. <input type="button" value="Verificar situação" onclick="calcular()">
+        <div id="res">
+        
+        </div>
+         <script>
+             function calcular() {
+             var txtv = window.document.querySelector('input#txtvel')
+             var res = window.document.querySelector('div#res')
+             var velocidade = Number(txtv.value)
+             res.innerHTML = `<p>A sua velocidade atual é de <strong>${velocidade} KM/h</strong></p>`
+             if (velocidade > 65) {
+        res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MULTADO</strong>. Procure pagá-la o quanto antes.</p>`
+             }
+             res.innerHTML += `Tome sempre cuidado, use sempre cinto de segurança.`
+              
+          }
+          </script>
+        </p>
     </div>
-     <script>
-         function calcular() {
-         var txtv = window.document.querySelector('input#txtvel')
-         var res = window.document.querySelector('div#res')
-         var velocidade = Number(txtv.value)
-         res.innerHTML = `<p>A sua velocidade atual é de <strong>${velocidade} KM/h</strong></p>`
-         if (velocidade > 65) {
-    res.innerHTML += `<p>Ela está acima de 60 Km/h e por isso você foi <strong>MULTADO</strong>. Procure pagá-la o quanto antes.</p>`
-         }
-         res.innerHTML += `Tome sempre cuidado, use sempre cinto de segurança.`
-          
-  } 
-  
-      </script>
-    </p>
     <p>
         E foi feita da seguinte forma:
         <pre>
@@ -80,22 +81,23 @@
                     //O que fazer se a condição tiver o valor de FALSE
                  }
             </code></pre>
-            Este programa mostra a mensagem de que "Você é um estrangeiro" para qualquer país que seja diferente de "Brasil".
-            Qual é o seu país? <input type="text" name="pais" id="pais"> <input type="button" value="ENTER" onclick="console()">
-             <div id="testeDeNacionalidade">
-         
-             </div>
-             <script>
-            function console() {
-             var país = window.document.querySelector('input#pais')
-             var resultadoDeNacionalidade = window.document.querySelector('div#testeDeNacionalidade')
-             if (país === 'Brasil') {
-            resultadoDeNacionalidade.innerHTML += `<p> Você é brasileiro.</p>` 
-             } else {
-            resultadoDeNacionalidade.innerHTML += `<p> Você é estrangeiro.</p>`
-             }
-         }
-             </script>
+            <div class="programaJS">
+                Este programa mostra a mensagem de que "Você é um estrangeiro" para qualquer país que seja diferente de "Brasil".
+                Qual é o seu país? <input type="text" name="pais" id="pais"> <input type="button" value="ENTER" onclick="console()">
+                 <div id="testeDeNacionalidade">
+                 </div>
+                 <script>
+                function console() {
+                 var país = window.document.querySelector('input#pais')
+                 var resultadoDeNacionalidade = window.document.querySelector('div#testeDeNacionalidade')
+                 if (país === 'Brasil') {
+                resultadoDeNacionalidade.innerHTML += `<p> Você é brasileiro.</p>`
+                 } else {
+                resultadoDeNacionalidade.innerHTML += `<p> Você é estrangeiro.</p>`
+                 }
+                         }
+                 </script>
+            </div>
      </p>
      <p>E ele foi feito da seguinte forma:
         <pre>
@@ -122,25 +124,49 @@
      </p>
     
     <h3>Condição alinhada:</h3>
-    <p>Qual é a sua idade? <input type="number" name="idade" id="idadeDeVoto"> <input type="button" value="verificar" onclick="calcular()"></p>
-        <div id="votar">
-            
-        </div>
-        <!-- <script>
-            function calcular() {
-                var idade = window.document.querySelector('input#idadeDeVoto')
-                var votar = window.document.querySelector('div#votar')
-                var idadeDeVoto = Number(idade.value)
-                if (idadeDeVoto < 16) {
-                    votar.innerHTML += `Sua idade é ${idadeDeVoto} e portanto você não pode votar ainda.`
-                } else if (idadeDeVoto <= 18 || idadeDeVoto >= 67)  {
-                    votar.innerHTML += `Sua idade é ${idadeDeVoto} e portanto o voto é opcional.`
-                } else {
-                    votar.innerHTML += `Sua idade é ${idadeDeVoto} e o seu voto é obrigatório.`
+    <div class="programaJS">
+        <p>Qual é a sua idade? <input type="number" name="idade" id="idadeDeVoto"> <input type="button" value="verificar" onclick="calcular()"></p>
+            <div id="votar">
+        
+            </div>
+            <!-- <script>
+                function calcular() {
+                    var idade = window.document.querySelector('input#idadeDeVoto')
+                    var votar = window.document.querySelector('div#votar')
+                    var idadeDeVoto = Number(idade.value)
+                    if (idadeDeVoto < 16) {
+                        votar.innerHTML += `Sua idade é ${idadeDeVoto} e portanto você não pode votar ainda.`
+                    } else if (idadeDeVoto <= 18 || idadeDeVoto >= 67)  {
+                        votar.innerHTML += `Sua idade é ${idadeDeVoto} e portanto o voto é opcional.`
+                    } else {
+                        votar.innerHTML += `Sua idade é ${idadeDeVoto} e o seu voto é obrigatório.`
+                    }
                 }
-            }
-        </script> -->
-        <p></p>
+            </script> -->
+    </div>
+        
+        <p>Feita da seguinte forma:
+            <pre>
+                <code>
+                &lt;script&gt;
+                    function calcular() {
+                        var idade = window.document.querySelector('input#idadeDeVoto')
+                        var votar = window.document.querySelector('div#votar')
+                        var idadeDeVoto = Number(idade.value)
+                        <strong>
+                        if (idadeDeVoto &lt; 16) {
+                            votar.innerHTML += `Sua idade é ${idadeDeVoto} e portanto você não pode votar ainda.`
+                        } else if (idadeDeVoto &lt;= 18 || idadeDeVoto &gt;= 67)  {
+                            votar.innerHTML += `Sua idade é ${idadeDeVoto} e portanto o voto é opcional.`
+                        } else {
+                            votar.innerHTML += `Sua idade é ${idadeDeVoto} e o seu voto é obrigatório.`
+                        }
+                        </strong>
+                    }
+                &lt;/script&gt;
+                </code>
+            </pre>
+        </p>
     <h2>Pegar a  hora no momento presente do usuário</h2>
     <p> Ao entrar nesse site, lhe saudamos de acordo com o seu horário atual. Fizemos isso, utilizando o seguinte código:
         <pre>
@@ -207,7 +233,40 @@
             
     </script>
     <h2>Condição múltipla</h2>
-    <p>Muito utilizada quanto se têm valores fixos e muitas possibilidades além de True e False. Para isso utilizamos o switch, que opera somente quando os valores são <i>inteiros</i> ou <i>strings</i>.</p>
+    <p>Muito utilizada quanto se têm valores fixos e muitas possibilidades além de True e False. Para isso utilizamos o switch, que opera somente quando os valores são <i>inteiros</i> ou <i>strings</i>. Por exemplo, a janela que lhe disse qual era o dia da semana de hoje, foi feita da seguinte forma.
+    <pre>
+        <code>
+            var dia = new Date()
+            var diaSem = dia.getDay()
+
+            switch(diaSem) {
+                case 0: 
+                    window.alert(`E bom domingo.`)
+                    break
+                case 1: 
+                    window.alert(`E hoje é segunda-feira, bom inicio de semana.`)
+                    break
+                case 2: 
+                    window.alert(`E hoje é terça-feira.`)
+                    break
+                case 3: 
+                    window.alert(`E hoje é quarta-feira.`)
+                    break
+                case 4: 
+                    window.alert(`E hoje é quinta-feira.`)
+                    break
+                case 5: 
+                    window.alert(`E hoje é sexta-feira, Bom final de semana.`)
+                    break
+                case 6: 
+                    window.alert(`E hoje é sábado.`)
+                    break
+                default: 
+                    window.alert(`[ERRO] Dia inválido.`)
+            }
+        </code>
+    </pre>
+    </p>
 
 
 
