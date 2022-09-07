@@ -10,11 +10,11 @@
 </head>
 <body>
     <h2>Condições</h2>
-    <p>Condições são muito importante para a construção de um sistema, pois, lhe permite tomar “rotas” alternativas, faz com que, dependendo do seu caso, o programa se comporta de uma forma “adaptável” ao seu problema, procurando resolvê-lo na condição em que você se encontra.
+    <p>Condições são muito importante para a construção de um sistema, pois, lhe permite tomar “rotas” alternativas, faz com que, dependendo do seu caso, o programa se comporta de uma forma “adaptável” ao seu problema, procurando resolvê-lo na condição em que você se encontra. São comandos que auxiliam no direcionamento da sequência de execução de um programa por meio da avaliação de condições lógicas. A possibilidade de tomar decisões na programação é considerada fundamental e de grande importância na elaboração de um código de qualquer linguagem, favorecendo uma aplicação lógica abrangente, avançada e mais complexa. Uma decisão condicional está relacionada, na avaliação de uma sentença, com a utilização de operadores relacionais (ou de comparação) e operadores lógicos.
     
     <h3>Condição simples:</h3>
          <p>
-             No caso em que o sistema "muda" apenas se o valor da condição é <i>verdadeiro</i>. 
+             No caso em que o sistema executa comandos apenas se o valor da condição é <i>verdadeiro</i>. Se a condição for <b>SIM (verdadeira)</b>, <u>serão executadas</u> as instruções que estiverem definidas entre as chaves <i>{}</i> da instrução <i>if</i>. Posteriormente, o fluxo do processamento segue com as instruções após as chaves {}. Caso o resultado da condição seja <b>NÃO (falso)</b>, <u>serão desconsideradas</u> as instruções do <i>if</i> e executadas somente as instruções que estiverem após as chaves <i>{}</i>, ou seja, após a decisão condicional simples <i>if</i>.
                      <pre><code>
              if (// condição proposta por você) {
                  //O que fazer se a condição tiver o valor de TRUE
@@ -72,7 +72,7 @@
     <br>
     <h3>Condição composta:</h3>
      <p>
-         No caso em que o valor da condição for <i>verdadeiro</i>, o sistema "toma" uma decisão, e se for <i>falso</i> toma outra.
+        A estrutura condicional composta é aplicada quando se busca a execução de diferentes comandos para um resultado lógico: SIM ou NÃO. Com a estrutura <i>if...else</i>, é possível avaliarmos o processo de decisão exclusiva de determinada situação, ou seja, quando o resultado for <b>somente verdadeiro</b> ou <b>somente falso</b>. Para uma condição verdadeira, serão executados os comandos posicionados entre os delimitadores <i>{...} </i>para o <i>if</i>. Já para uma condição falsa, serão executados os comandos posicionados entre os delimitadores <i>{...}</i> para o <i>else</i>.
             <pre><code>
                 if (// condição proposta por você) {
                     //O que fazer se a condição tiver o valor de TRUE
@@ -122,7 +122,7 @@
         </pre>
      </p>
     
-    <h3>Condição alinhada:</h3>
+    <h3>Condição aninhada ou encandeamento de <i>if</i>s:</h3>
     <div class="programaJS">
         <p>Qual é a sua idade? <input type="number" name="idade" id="idadeDeVoto"> <input type="button" value="verificar" onclick="calcular()"></p>
             <div id="votar">
@@ -232,7 +232,7 @@
             
     </script>
     <h2>Condição múltipla</h2>
-    <p>Muito utilizada quanto se têm valores fixos e muitas possibilidades além de True e False. Para isso utilizamos o switch, que opera somente quando os valores são <i>inteiros</i> ou <i>strings</i>. Por exemplo, a janela que lhe disse qual era o dia da semana de hoje, foi feita da seguinte forma.
+    <p>Muito utilizada quanto se têm valores fixos e muitas possibilidades além de True e False. Para isso utilizamos o <i>switch</i>, que opera somente quando os valores são <i>inteiros</i> ou <i>strings</i>. O <i>switch</i> consiste em outro recurso utilizado para apresentar uma lista de opções com seleção única ou múltipla. A aplicação da instrução <i>switch</i> implica a elaboração de uma estrutura de testes condicionais, controlada por um “elemento-chave” ou um comutador (<i>switch</i>). Nesse caso, o comutador ou “elemento-chave” (campo de indexação) direciona o sentido do fluxo de dados por meio de uma estrutura de controle com múltipla escolha. Por exemplo, a janela que lhe disse qual era o dia da semana de hoje, foi feita da seguinte forma.
     <pre>
         <code>
             var dia = new Date()
