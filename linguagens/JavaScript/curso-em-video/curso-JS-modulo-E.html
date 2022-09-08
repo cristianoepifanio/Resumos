@@ -9,7 +9,52 @@
     <title>Módulo E</title>
 </head>
 <body>
-    
+    <h2>Repetições</h2>
+    <h3>Estrutura de repetição no início e no final</h3>
+    <p>
+        <pre>
+            <code>
+                while (condição desejada) {
+                    //bloco de comandos
+                }
+            </code>
+        </pre>
+        <pre>
+            <code>
+                do {
+                    //bloco de comandos
+                } while (condição desejada)
+            </code>
+        </pre>
+        Por exemplo:
+        <pre>
+            <code>
+                var num = 1
+                while (num &lt;= 6) {
+                    console.log(`Passo ${num}.`)
+                    num++
+                }
+                        <strong>ou</strong>
+                var num = 1
+                do {
+                    console.log(`Passo ${num}.`)
+                    num++
+                } while (num &lt;= 6)
+            </code>
+        </pre>
+    </p>
+    <h3>Estrutura de repetição por incremento</h3>
+    <pre>
+        <code>
+            for (início; teste lógico; incremento)  {
+                //bloco de comandos
+            }
+          
+            for (var num = 1;num &lt;= 6;num++)  {
+                console.log(`Passo ${num}.`)
+            }
+        </code>
+    </pre>
     <hr>
      <p><a href="../../indexjs.html">Página inicial</a></p>
 </body>
