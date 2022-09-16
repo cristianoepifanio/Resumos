@@ -50,11 +50,12 @@ td:hover {
     gap: 20px;
     border-radius: 3%;
 }
-.foto-perfil {
+.foto-perfil img {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     margin: 20px;
+    border-radius: 50%;
 
 }
 .self-introdution {
