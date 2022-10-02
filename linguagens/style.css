@@ -4,8 +4,11 @@
 body {
     background-color: beige;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 25px;
+    margin: 50px;
     padding: 12px;
+    width: auto;
+    align-content: center;
+
 }   
 header {
     background-color: #06214D;
@@ -24,8 +27,8 @@ a {
 a:hover {
     background-color: #06214D;
     color: white;
-    padding: 2px;
-    border-radius: 15%;
+    padding: 5px;
+    border-radius: 15px;
 }
 abbr {
     text-decoration: none;
@@ -77,17 +80,19 @@ th {
 .a .referencias {
     font-size: 10px;
 }
+/* .blocos pertencem à tabela de links na seção "INTERNET" */
 .blocos {
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #a5836286;
     padding: 5px;
     margin: 25px;
     border-radius: 3%;
-    max-width: 1000px;
+    width: 30%;
+    align-content: center;
    
 }
 .bloco {
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #F8F9FB;
     margin: 15px;
     padding: 5px;
@@ -100,7 +105,7 @@ th {
     border-radius: 10%;
 }
 .bloco:hover {
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
     background-color: #F8F9FB;
     margin: 15px;
     width: 115px;
@@ -111,6 +116,24 @@ th {
     justify-content: center;
     border-radius: 10%;
     z-index: auto;
+}
+.button {
+    background-color: white;
+    font-size: 100%;
+    font-weight: 700;
+    padding: 5px;
+    color: #06214D;
+    border: 2px solid #06214D;
+    border-radius: 30px;
+    width: 20%;
+}
+.button:hover {
+    background-color: #06214D;
+    font-size: 100%;
+    color: white;
+    border: 1px solid #06214D;
+    border-radius: 30px;
+    width: 20%;
 }
 .imagens {
     border-radius: 15%;
