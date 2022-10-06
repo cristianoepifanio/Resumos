@@ -10,8 +10,8 @@
 </head>
 <body>
     <h2>Repetições</h2>
-    <h3>Estrutura de repetição no início e no final</h3>
-    <p>
+    <h3>Estrutura de repetição no início e no final (<em>While</em> e <em>do-while)</em></h3>
+    <p>A estrutura condicional while se caracteriza por efetuar um teste lógico no início de um laço de repetição (looping), verificando se é permitido executar o trecho de instruções subordinadas ao laço. Essa condição, declarada por uma “expressão booleana”, controla a frequência do processamento do laço e é aplicada sempre que a verificação condicional tiver de ocorrer antes da execução das instruções. 
         <pre>
             <code>
                 while (condição desejada) {
@@ -19,6 +19,7 @@
                 }
             </code>
         </pre>
+        O condicional do...while (faça...enquanto) caracteriza-se por efetuar um teste lógico no final de um laço de repetição (looping). Essa estrutura também tem seu funcionamento controlado por condição. Ela executa um conjunto de instruções pelo menos uma vez, antes de verificar a validade da condição apresentada.
         <pre>
             <code>
                 do {
@@ -44,17 +45,29 @@
         </pre>
     </p>
     <h3>Estrutura de repetição por incremento</h3>
-    <pre>
-        <code>
-            for (início; teste lógico; incremento)  {
-                //bloco de comandos
-            }
-          
-            for (var num = 1;num &lt;= 6;num++)  {
-                console.log(`Passo ${num}.`)
-            }
-        </code>
-    </pre>
+    <p>A estrutura incondicional for se caracteriza por efetuar a execução de rotinas de um laço de repetição (looping) um determinado número de vezes, por meio da utilização de um contador. Esse contador pode ser crescente ou decrescente.
+        <pre>
+            <code>
+                for (início; teste lógico; incremento)  {
+                    //bloco de comandos
+                }
+        
+                for (var num = 1;num &lt;= 6;num++)  {
+                    console.log(`Passo ${num}.`)
+                }
+            </code>
+        </pre>
+        Comumente, você ouvirá algo como“O programa entrou em looping” quando o programa está sendo executado ou “rodando”, sem nenhuma possibilidade de alcançar o final do processamento. O que pode acontencer por:
+        <ul>
+            <li>Um erro de lógica</li>
+            <li>O mau posicionamento de comandos</li>
+            <li>Uma inversão de valores</li>
+            <li>Uma decisão condicional que não tem como ser atendida.</li>
+        </ul>
+    </p>
+
+
+
     <hr>
      <p><a href="../../indexjs.html" class="button">Página inicial</a></p>
 </body>

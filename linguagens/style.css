@@ -1,6 +1,6 @@
 /* Um belo possível conjunto para uma paleta de cores */
 
-/* tags */
+/* TAGS */
 body {
     background-color: beige;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -55,6 +55,7 @@ img {
     max-width: 100%;
     height: auto;
 }
+/* Estilos das tabelas em geral */
 table, th, td {
     background-color: #ffffff;
     border: 2px solid #000000;
@@ -76,7 +77,7 @@ th {
 
 
 
-/* Classes */
+/* CLASSES */
 .a .referencias {
     font-size: 10px;
 }
