@@ -55,6 +55,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+p {
+    text-indent: 20px;
+}
 /* Estilos das tabelas em geral */
 table, th, td {
     background-color: #F8F9FB;
