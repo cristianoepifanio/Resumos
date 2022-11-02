@@ -1,0 +1,16 @@
+@media screen and (max-width: 500px){
+    
+    .self-introdution{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        font-size: 15px;
+    }
+    .foto-perfil img {
+        width: 80%;
+    }
+    .redes-sociais{
+        display: flex;
+        flex-direction: column;
+    }
+}
