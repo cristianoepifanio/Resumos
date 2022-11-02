@@ -5,6 +5,7 @@
         flex-direction: column-reverse;
         width: 90%;
         font-size: 15px;
+        margin: auto;
     }
     .foto-perfil img {
         width: 80%;
@@ -12,5 +13,8 @@
     .redes-sociais{
         display: flex;
         flex-direction: column;
+    }
+    h2 h3 h4{
+        align-content: center;
     }
 }
