@@ -26,29 +26,22 @@ a:hover {
 h1, h2, h3, h4 {
     background-color: #06214D;
     color: #A58362;
+    align-items: center;
 }
 p {
     font-weight: 400;
 }
-table {
-    display: flex;
-    justify-content: center;
-    border: 10px;
+.button{
+    border:1px solid #06214D;
+    border-radius: 30px;
+    text-align: center;
+    background-color: #FFF;
+    margin-bottom: 1%;
 }
-
-td {
-    background-color: antiquewhite;
-    padding: 12px;
-    gap: 20px;
-    border-radius: 3%;
-    transition: background-color 0.2s ease-in;
-}
-td:hover {
-    background-color: #0b3579;
-    color: white;
-    padding: 12px;
-    gap: 20px;
-    border-radius: 3%;
+.button:hover{
+    background-color: #06214D;
+    border: #FFF;
+    transition: 0.3s ease-in-out;
 }
 .foto-perfil img {
     display: flex;
@@ -63,4 +56,9 @@ td:hover {
     flex-direction: row;
     font-size: 25px;
     max-width: 100%;
+}
+
+.redes-sociais a{
+    gap: 35px;
+    margin: auto;
 }
