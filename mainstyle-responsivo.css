@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px){
+@media screen and (max-width: 1000px){
     
     .self-introdution{
         display: flex;
@@ -6,9 +6,11 @@
         width: 90%;
         font-size: 15px;
         margin: auto;
+        margin-top: 2%;
     }
     .foto-perfil img {
         width: 80%;
+        margin: auto;
     }
     .redes-sociais{
         display: flex;
