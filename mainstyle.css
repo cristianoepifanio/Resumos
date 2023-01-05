@@ -1,7 +1,13 @@
+*{
+    margin: 0;
+}
+html{
+    margin-top: 0;
+}
 body {
     background-image: linear-gradient(360deg, #06214D, #3c819e,  #94DFFF, #71C6EB);
     background-attachment: fixed;
-    margin: 2%;
+    margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
    
@@ -13,6 +19,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 h1 h2 h3 h4 {
@@ -38,33 +45,78 @@ p {
 .button{
     border:1px solid #06214D;
     border-radius: 30px;
+    width: 40vw;
     text-align: center;
     background-color: #FFF;
-    margin-bottom: 1%;
+    margin: 1% auto;
+    transition: 0.8s ease-in-out;
 }
 .button:hover{
-    background-color: #06214D;
+    background-color: #06214dab;
     border: #FFF;
-    transition: 0.3s ease-in-out;
 }
 .foto-perfil img {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin: 1%;
-
+    float: right;
+    width: 90%;
     border-radius: 50%;
+    margin: 20px auto;
+    
+}
+.foto-perfil > img:hover {
+    border: 5px solid #fff;
+    transition: 0.3s ease-out;
+    width: calc(80% - 5px);
+    
 
 }
+.clear{
+    clear: both;
+}
+
 .self-introdution {
-    display: flex;
-    flex-direction: row;
-    font-size: 25px;
-    max-width: 100%;
+    display:flex;
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+}
+.self-introdution p{
+    width: 60%;
     text-indent: 5%;
+    margin: 50px;
+    text-align: justify;
 }
 
 .redes-sociais a{
     gap: 35px;
     margin: auto;
+}
+
+/* Responsivo */
+@media screen and (max-width: 750px){
+    
+    .self-introdution{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 90%;
+        font-size: 15px;
+        margin: auto;
+        margin-top: 2%;
+        justify-content: center;
+    }
+    .self-introdution p{
+        width: 100%;
+        text-align: justify;
+    }
+    .foto-perfil img {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .redes-sociais{
+        display: flex;
+        flex-direction: column;
+    }
+    h2 h3 h4{
+        align-content: center;
+    }
 }
